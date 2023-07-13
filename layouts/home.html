@@ -1,16 +1,17 @@
 {{ define "main" }}
     {{"<!-- layouts/home.html -->" | safeHTML }}
     <section class="prim-sec">
-        <div class="prim-cont">
-            <h1>Welcome to your new Hugo Site!</h1>
-            {{ range .Site.Sections }}
-                <h2>{{ .Title }}</h2>
-                <ul>
-                    {{ range .Pages }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                </ul>
-            {{ end }}
+        <div class="prim-cont home-hero">
+            <div class="img-overlay-wrapper">
+                <div class="img-overlay">
+                    <h1>Hi, I'm Rocky Hutchins</h1>
+                </div>
+                <div class="spacer"></div>
+                <img 
+                    src="/images/bandw-background.webp" 
+                    alt="Rocky Hutchins playing drums"
+                >
+            </div>
         </div>
     </section>
 {{ end }}
