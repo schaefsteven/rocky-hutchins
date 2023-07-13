@@ -50,6 +50,50 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 
 // 8. Add additional custom code here
 
+body {
+    background-color: black;
+}
+
+.home-hero {
+    height: 80svh;
+    display: flex;
+}
+
+.home-hero .img-overlay-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-hero .img-overlay-wrapper img {
+}
+
+.img-overlay-wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+}
+
+.img-overlay-wrapper > .spacer {
+    width: 100%;
+    min-width: 15%;
+}
+
+.img-overlay-wrapper > img {
+    max-width: 100%;
+    height: max-content;
+    max-height: 100%;
+    z-index: -5;
+} 
+
+.img-overlay {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+
+
+
 // start template styles ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .prim-sec {
@@ -60,6 +104,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 .prim-cont {
     @extend .container-xxl;
     @extend .d-md-flex;
+    max-width: 800px;
 }
 
 main > section:nth-child(even) {
