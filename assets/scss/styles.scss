@@ -56,7 +56,7 @@ body {
     background-color: black;
 }
 
-.over-img {
+.image-overlay {
     $height: 70svh;
     position: relative;
     min-height: $height;
@@ -77,19 +77,8 @@ body {
         }
 }
 
-.overlay {
-    position: absolute; 
-    top: 0px;
-    left: 0px;
-    min-height: fit-content;
-    max-height: 50svh;
-    }
-}
-
 
 .home-hero {
-    min-height: 60svh;
-    //max-height: Min(100svh, 800px);
     display: flex;
 }
 
