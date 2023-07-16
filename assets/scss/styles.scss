@@ -57,22 +57,39 @@ body {
 }
 
 .over-img {
+    $height: 70svh;
     position: relative;
-    //z-index: 1;
+    min-height: $height;
+    width: 100%;
+    > * {
+        z-index: 10;
+        position: relative;
+    }
+    > .behind-text {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: $height;
+        margin-left: 20%;
+        @media screen and (max-width: 560px) {
+            right: -10%;
+        }
 }
 
-img.behind-text {
-    position: absolute;
+.overlay {
+    position: absolute; 
     top: 0px;
     left: 0px;
-    max-height: 600px;
-    width: auto;
-    z-index: -1;
+    min-height: fit-content;
+    max-height: 50svh;
+    }
 }
+
 
 .home-hero {
     min-height: 60svh;
-    max-height: Min(100svh, 800px);
+    //max-height: Min(100svh, 800px);
     display: flex;
 }
 
