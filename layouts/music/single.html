@@ -1,0 +1,6 @@
+{{ define "main" }}
+    <a target="_blank" href="{{ .Params.bcLink }}">Listen here</a>
+    <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1168004930/size=large/bgcol=181a1b/linkcol=056cc4/tracklist=false/transparent=true/" seamless><a href="https://hockyrutchins.bandcamp.com/album/equinox-3">equinox by Rocky Hutchins</a></iframe>
+    {{ $albumArt := resources.GetRemote "https://f4.bcbits.com/img/a0813833197_5.jpg" }}
+    <img src="{{ $albumArt.RelPermalink }}" alt="">
+{{ end }}
