@@ -75,6 +75,7 @@ body {
         @media screen and (max-width: 560px) {
             right: -10%;
         }
+    }
 }
 
 
@@ -126,41 +127,6 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
 }
-
-/*
-.home-hero .image-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.img-overlay-wrapper {
-    position: relative;
-    width: 100%;
-    max-height: 100%;
-    //overflow-y: scroll;
-    //overflow-x: clip;
-}
-
-.img-overlay-wrapper > .spacer {
-    width: 100%;
-    min-width: 10%;
-}
-
-.img-overlay-wrapper > img {
-    max-width: 105%;
-    height: max-content;
-    max-height: 100%;
-    z-index: -5;
-    //display:none;
-} 
-
-.img-overlay {
-    position: absolute; 
-    top: 0px;
-    left: 0px;
-}
-*/
 
 .navbar-brand img {
     max-height: 50px;
