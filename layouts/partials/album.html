@@ -23,7 +23,7 @@
         {{ $tracks := findRESubmatch $tracksRegEx $webpage.Content }}
         {{ $numOfTracks := int (index (index (last 1 $tracks) 0) 1) }}
         <iframe 
-            style="height: {{ add 141 (mul $numOfTracks 33) }}px;"
+            style="height: {{ add 145 (mul $numOfTracks 33) }}px;"
             class="bc-player"
             src="https://bandcamp.com/EmbeddedPlayer/{{ index $albumNum 0 }}/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" 
             seamless
