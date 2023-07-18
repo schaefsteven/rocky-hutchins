@@ -2,7 +2,7 @@
 {{ $webpage := resources.GetRemote .Params.bcLink }}
 
 <div class="row gx-4 album-wrapper d-flex justify-content-center">
-    <div class="col-md-6 d-flex align-items-end">
+    <div class="col-md-5 d-flex align-items-end">
         <!-- Get the album art -->
         {{ $imgRegEx := `<link\s+rel="image_src"\s+href="([^"]+)"\s*\/?>` }}
         {{ $imgTag := findRESubmatch $imgRegEx $webpage.Content }}
@@ -11,8 +11,8 @@
         <img class="album-art" src="{{ $albumArt.RelPermalink }}" alt="Album Art">
     </div>
 
-    <div class="col-md-6 album-desc d-flex flex-column">
-        <h1 class="mb-3 mt-4 mt-md-2">{{ .Title }}</h1>
+    <div class="col-md-7 album-desc d-flex flex-column">
+        <h1 class="mb-3 mt-4 mt-md-4">{{ .Title }}</h1>
         <!-- Get the album number and create an embedded player -->
         {{ $playerRegEx := `<meta\s+property="og:video"\s+content="([^"]+)"\s*\/?>` }}
         {{ $playerTag := findRESubmatch $playerRegEx $webpage.Content }}

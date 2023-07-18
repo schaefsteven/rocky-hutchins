@@ -123,10 +123,10 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 .album-wrapper {
+    overflow: clip;
     @media screen and (min-width: 768px) {
-        aspect-ratio: 21/10;
+        aspect-ratio: 12/5;
     }
-    //overflow: clip;
 }
 
 .album-wrapper > div {
@@ -158,7 +158,6 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 // start template styles ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .prim-sec {
-    @extend .py-md-5;
     @extend .py-2;
 }
 
@@ -166,10 +165,6 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     @extend .container-xxl;
     @extend .d-md-flex;
     max-width: 900px;
-}
-
-main > section:nth-child(even) {
-    @extend .bg-dark-subtle;
 }
 
 .show .navbar-nav > li {

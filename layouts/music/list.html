@@ -1,11 +1,9 @@
 {{ define "main" }}
+    {{ range .Pages }}
     <section class="prim-sec">
-        <div class="prim-cont home-hero d-flex flex-column">
-            {{ range .Pages }}
-                <section class="my-4">
-                    {{ partial "album.html" . }}
-                </section>
-            {{ end }}
+        <div class="prim-cont d-flex flex-column">
+            {{ partial "album.html" . }}
         </div>
     </section>
+    {{ end }}
 {{ end }}
