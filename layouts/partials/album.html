@@ -13,6 +13,9 @@
 
     <div class="col-md-7 album-desc d-flex flex-column">
         <h1 class="mb-3 mt-4 mt-md-4">{{ .Title }}</h1>
+        {{ with .Params.credits }}
+            <span class="album-credits ps-1 pb-2">Credits: {{ . }}</span>
+        {{ end }}
         <!-- Get the album number and create an embedded player -->
         {{ $playerRegEx := `<meta\s+property="og:video"\s+content="([^"]+)"\s*\/?>` }}
         {{ $playerTag := findRESubmatch $playerRegEx $webpage.Content }}
