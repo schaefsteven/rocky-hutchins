@@ -130,7 +130,9 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 .album-wrapper > div {
-    max-width: 480px;
+    @media screen and (max-width: 768px) {
+        max-width: 480px;
+    }
     height: 100%;
 }
 
