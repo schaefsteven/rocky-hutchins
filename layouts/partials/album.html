@@ -19,7 +19,7 @@
         {{ $playerURL := index (index $playerTag 0) 1 }}
         {{ $albumNum := findRE `(album|track)=(\d+)` $playerURL }}
         <iframe 
-            style="border: 0; width: 100%; height: 373px;" 
+            style="border: 0; width: 100%; height: 273px;" 
             src="https://bandcamp.com/EmbeddedPlayer/{{ index $albumNum 0 }}/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" 
             seamless
             >
