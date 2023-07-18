@@ -122,10 +122,38 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     width: auto;
 }
 
-.album-art {
-    max-width: 100%;
+.album-wrapper {
+    @media screen and (min-width: 768px) {
+        aspect-ratio: 21/10;
+    }
+    //overflow: clip;
 }
 
+.album-wrapper > div {
+    max-width: 480px;
+    height: 100%;
+}
+
+.album-art {
+    max-width: 100%;
+    border: 2px solid #1B1B1B;
+}
+
+.album-desc {
+    height: 100%;
+}
+
+.bc-player {
+    overflow: clip;
+    height: 300px;
+    max-height: 100%;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.red-border {
+    border: 1px solid red;
+}
 
 // start template styles ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
