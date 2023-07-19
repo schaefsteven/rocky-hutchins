@@ -1,9 +1,9 @@
 {{ define "main" }}
     {{"<!-- layouts/work-with-me/single.html -->" | safeHTML }}
     <div class="prim-sec">
-        <div class="prim-cont flex-column align-items-center">
-            <img class="rounded-circle headshot col-6 p-3" src="/images/headshot.jpg" alt="Rocky Hutchins headshot">
-            <p class="pitch">{{ .Params.pitch }}</p>
+        <div class="prim-cont d-flex flex-column align-items-center">
+            <img class="rounded-circle headshot p-3" src="/images/headshot.jpg" alt="Rocky Hutchins headshot">
+            <p class="pitch p-3 fs-5 fs-md-4">{{ .Params.pitch }}</p>
             <ul class="contact-buttons list-unstyled">
                 <li>
                     <a 

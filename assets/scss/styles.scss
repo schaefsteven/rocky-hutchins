@@ -158,11 +158,19 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     opacity: 90%;
 }
 
+.headshot {
+    max-width: 600px;
+    width: 100%;
+}
+
 .contact-buttons {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
     > * {
         margin: 1rem;
+        white-space: nowrap;
         min-width: min-content;
     }
 }
