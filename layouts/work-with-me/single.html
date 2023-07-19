@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{"<!-- layouts/work-with-me/single.html -->" | safeHTML }}
+    <div class="prim-sec">
+        <div class="prim-cont flex-column align-items-center">
+            <img class="rounded-circle headshot col-6" src="/images/headshot.jpg" alt="Rocky Hutchins headshot">
+            <p class="pitch">{{ .Params.pitch }}</p>
+            <a href="mailto:{{ .Site.Params.primEmail }}?subject={{ htmlEscape "Website Inquiry" }}" class="btn btn-primary my-2 ms-md-4 mb-4 mb-md-0 fw-bold"><i class="bi bi-envelope-fill"></i> Email me</a>
+        </div>
+    </div>
+{{ end }}
