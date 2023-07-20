@@ -153,6 +153,13 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     width: 100%;
 }
 
+iframe {
+    display: hidden;
+    &.loaded {
+        display: block;
+    }
+}
+
 .album-credits {
     font-size: 0.9rem;
     opacity: 90%;
