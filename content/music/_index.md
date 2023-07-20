@@ -1,4 +1,4 @@
 ---
 Title: Music
-menu: main
+menu: [main, hero]
 ---
