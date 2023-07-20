@@ -175,6 +175,15 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     }
 }
 
+.links-list {
+    max-width: 400px;
+    width: 100%;
+    .btn {
+        width: 100%;
+    }
+}
+
+
 .red-border {
     border: 1px solid red;
 }
