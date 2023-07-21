@@ -154,9 +154,10 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 iframe {
-    display: hidden;
+    opacity: 0%;
     &.loaded {
-        display: block;
+        opacity: 100%;
+        transition: opacity 1s;
     }
 }
 
