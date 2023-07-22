@@ -117,7 +117,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     opacity: 50%;
     transform: translate(10px, 5px);
     animation-composition: add;
-    $time: 11s;
+    $time: 15s;
     animation: $time blue-move-x ease-in-out infinite, $time blue-move-y infinite;
     @keyframes blue-move-x { 
         $size: 10px;
@@ -156,7 +156,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     opacity: 50%;
     transform: translate(5px, -5px);
     animation-composition: add;
-    $time: 8s;
+    $time: 13s;
     animation: $time green-move-x ease-in-out infinite, $time green-move-y infinite;
     @keyframes green-move-x { 
         $size: -10px;
