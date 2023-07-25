@@ -139,6 +139,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 .album-wrapper {
+    width: 100%;
     overflow: clip;
     @media screen and (min-width: 768px) {
         aspect-ratio: 12/5;
