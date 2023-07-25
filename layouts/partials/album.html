@@ -1,18 +1,19 @@
 <!-- Grab the webpage -->
 {{ $webpage := resources.GetRemote .Params.bcLink }}
 
-<div class="row gx-4 album-wrapper d-flex justify-content-center">
-    <div class="col-md-5 d-flex align-items-end">
+<div class="row gx-4 album-wrapper d-flex justify-content-center p-2">
+    <div class="col-md-5 d-flex align-items-end p-0">
         <!-- Get the album art -->
         {{ $imgRegEx := `<link\s+rel="image_src"\s+href="([^"]+)"\s*\/?>` }}
         {{ $imgTag := findRESubmatch $imgRegEx $webpage.Content }}
         {{ $albumArtURL := index (index $imgTag 0) 1 }}
         {{ $albumArt := resources.GetRemote $albumArtURL }}
+        {{ $albumArt := $albumArt.Resize "500x webp" }}
         <img class="album-art" src="{{ $albumArt.RelPermalink }}" alt="Album Art">
     </div>
 
-    <div class="col-md-7 album-desc d-flex flex-column">
-        <h1 class="mb-3 mt-4 mt-md-4">{{ .Title }}</h1>
+    <div class="col-md-7 album-desc d-flex flex-column p-0 ps-md-3">
+        <h2 class="mb-3 mt-4 mt-md-1">{{ .Title }}</h2>
         {{ with .Params.credits }}
             <span class="album-credits ps-1 pb-2">Credits: {{ . }}</span>
         {{ end }}
