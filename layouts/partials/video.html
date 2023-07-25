@@ -1,0 +1,21 @@
+<div class="video-wrapper d-flex">
+    {{ $videoID := .Params.link }}
+    {{ $regEx := `https:\/\/www\.youtube\.com\/watch\?v=(.*)` }}
+    {{ $videoID := findRESubmatch $regEx $videoID }}
+    {{ $videoID := index (index $videoID 0) 1 }}
+    <iframe 
+        class="yt-player"
+        src="https://www.youtube.com/embed/{{ $videoID }}" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="picture-in-picture; web-share" 
+        allowfullscreen
+    >
+    </iframe> 
+    <div class="album-desc d-flex flex-column ps-md-3">
+        <h2 class="mb-3 mt-4 mt-md-4">{{ .Title }}</h2>
+        {{ with .Params.credits }}
+            <span class="album-credits ps-1 pb-2">Credits: {{ . }}</span>
+        {{ end }}
+    </div>
+</div>

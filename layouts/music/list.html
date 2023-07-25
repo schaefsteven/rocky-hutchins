@@ -2,7 +2,8 @@
     {{ range .Pages }}
     <section class="prim-sec">
         <div class="prim-cont d-flex flex-column">
-            {{ partial "album.html" . }}
+            {{ if eq .Type "bcAlbum" }}{{ partial "album.html" . }}{{ end }}
+            {{ if eq .Type "ytVid" }}{{ partial "video.html" . }}{{ end }}
         </div>
     </section>
     {{ end }}

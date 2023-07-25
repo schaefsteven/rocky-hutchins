@@ -138,7 +138,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     width: auto;
 }
 
-.album-wrapper {
+.album-wrapper, .video-wrapper {
     width: 100%;
     overflow: clip;
     @media screen and (min-width: 768px) {
@@ -168,6 +168,11 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     max-height: 100%;
     border: 2px solid black;
     width: 100%;
+}
+
+.yt-player {
+    height: 100%;
+    aspect-ratio: 1920/1080;
 }
 
 iframe {
