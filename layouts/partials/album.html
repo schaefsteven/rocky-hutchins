@@ -1,6 +1,12 @@
 <!-- Grab the webpage -->
 {{ $webpage := resources.GetRemote .Params.bcLink }}
 
+{{ $lazy := ""}}
+{{ if gt (.Scratch.Get "i") 1  }}
+    {{ $lazy = `loading="lazy"` }}
+{{ end }}
+
+
 <div class="row gx-4 album-wrapper d-flex justify-content-center p-2">
     <div class="col-md-5 d-flex align-items-end p-0">
         <!-- Get the album art -->
@@ -9,15 +15,19 @@
         {{ $albumArtURL := index (index $imgTag 0) 1 }}
         {{ $albumArt := resources.GetRemote $albumArtURL }}
         {{ $albumArt := $albumArt.Resize "500x webp" }}
-        <img class="album-art" src="{{ $albumArt.RelPermalink }}" alt="Album Art">
+        <img 
+            class="album-art" 
+            src="{{ $albumArt.RelPermalink }}" 
+            alt="Album Art"
+            {{ $lazy | safeHTMLAttr }}
+        >
     </div>
-
     <div class="col-md-7 album-desc d-flex flex-column p-0 ps-md-3">
         <h2 class="mb-3 mt-4 mt-md-1">{{ .Title }}</h2>
         {{ with .Params.credits }}
             <span class="album-credits ps-1 pb-2">Credits: {{ . }}</span>
         {{ end }}
-        <!-- Get the album number and create an embedded player -->
+                <!-- Get the album number and create an embedded player -->
         {{ $playerRegEx := `<meta\s+property="og:video"\s+content="([^"]+)"\s*\/?>` }}
         {{ $playerTag := findRESubmatch $playerRegEx $webpage.Content }}
         {{ $playerURL := index (index $playerTag 0) 1 }}
@@ -31,6 +41,7 @@
             class="bc-player"
             src="https://bandcamp.com/EmbeddedPlayer/{{ index $albumNum 0 }}/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" 
             seamless
+            {{ $lazy | safeHTMLAttr }}
             >
             <a href="{{ .Params.bcLink }}"></a>
         </iframe>

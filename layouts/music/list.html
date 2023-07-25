@@ -1,10 +1,11 @@
 {{ define "main" }}
-    {{ range .Pages }}
-    <section class="prim-sec">
-        <div class="prim-cont d-flex flex-column align-items-center">
-            {{ if eq .Type "bcAlbum" }}{{ partial "album.html" . }}{{ end }}
-            {{ if eq .Type "ytVid" }}{{ partial "video.html" . }}{{ end }}
-        </div>
-    </section>
+    {{ range $i, $page := .Pages }}
+        {{ .Scratch.Set "i" $i }}
+        <section class="prim-sec">
+            <div class="prim-cont d-flex flex-column align-items-center">
+                {{ if eq .Type "bcAlbum" }}{{ partial "album.html" $page }}{{ end }}
+                {{ if eq .Type "ytVid" }}{{ partial "video.html" $page }}{{ end }}
+            </div>
+        </section>
     {{ end }}
 {{ end }}

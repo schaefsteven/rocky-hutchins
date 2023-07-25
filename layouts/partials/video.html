@@ -1,3 +1,8 @@
+{{ $lazy := ""}}
+{{ if gt (.Scratch.Get "i") 1  }}
+    {{ $lazy = `loading="lazy"` }}
+{{ end }}
+
 <div class="row gx-4 video-wrapper d-flex justify-content-center p-2 flex-row-reverse">
     <div class="col-md-8 d-flex align-items-end p-0">
         {{ $videoID := .Params.link }}
@@ -11,6 +16,7 @@
             frameborder="0" 
             allow="picture-in-picture; web-share" 
             allowfullscreen
+            {{ $lazy | safeHTMLAttr }}
         >
         </iframe> 
     </div>
