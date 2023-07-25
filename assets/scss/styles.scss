@@ -79,16 +79,22 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
             right: -10%;
         }
     }
+    p, li, h1 {
+        filter: 
+            drop-shadow(0px 0px 5px black)
+            drop-shadow(0px 0px 5px black)
+            drop-shadow(0px 0px 5px black)
+            drop-shadow(0px 0px 5px black)
+            drop-shadow(0px 0px 5px black);
+    }
     p, li {
-        background-color: rgba(0,0,0,0.5);
-        border-radius: 1rem;
         font-family: 'Roboto Mono', monospace;
     }
     h1 {
         @extend .display-3;
         max-width: 75%;
     }
-    p {
+    .hero-tagline {
         font-weight: 300;
         max-width: Min(60%, 400px);
         letter-spacing: -1.5px;
@@ -113,84 +119,19 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     }
 }
 
-#blue-shadow {
-    opacity: 50%;
-    transform: translate(10px, 5px);
-    animation-composition: add;
-    $time: 15s;
-    animation: $time blue-move-x ease-in-out infinite, $time blue-move-y infinite;
-    @keyframes blue-move-x { 
-        $size: 10px;
-        0% {
-            transform: translateX(-$size);
-        }
-        50% {
-            transform: translateX($size);
-        }
-        100% {
-            transform: translateX(-$size);
-        }
-    }
-
-    @keyframes blue-move-y { 
-        $size: 15px;
-        0% {
-            transform: translateY(0px);
-            animation-timing-function: ease-out;
-        }
-        25% {
-            transform: translateY($size);
-            animation-timing-function: ease-in-out;
-        }
-        75% {
-            transform: translateY(-$size);
-            animation-timing-function: ease-in;
-        }
-        100% {
-            transform: translateY(0px);
-        }
-    }
+.color-trail {
+    filter: 
+        drop-shadow(2px 2px 1px black)
+        drop-shadow(3px 3px 0px $primary)
+        drop-shadow(3px 1px 0px #05A4B7);
 }
 
-#green-shadow {
-    opacity: 50%;
-    transform: translate(5px, -5px);
-    animation-composition: add;
-    $time: 13s;
-    animation: $time green-move-x ease-in-out infinite, $time green-move-y infinite;
-    @keyframes green-move-x { 
-        $size: -10px;
-        0% {
-            transform: translateX(-$size);
-        }
-        50% {
-            transform: translateX($size);
-        }
-        100% {
-            transform: translateX(-$size);
-        }
-    }
-
-    @keyframes green-move-y { 
-        $size: 5px;
-        0% {
-            transform: translateY(0px);
-            animation-timing-function: ease-out;
-        }
-        25% {
-            transform: translateY($size);
-            animation-timing-function: ease-in-out;
-        }
-        75% {
-            transform: translateY(-$size);
-            animation-timing-function: ease-in;
-        }
-        100% {
-            transform: translateY(0px);
-        }
+.color-hover {
+    transition: filter 0.2s ease-out;
+    &:hover {
+        @extend .color-trail;
     }
 }
-
 
 .navbar-brand img {
     max-height: 50px;

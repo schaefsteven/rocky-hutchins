@@ -2,8 +2,10 @@
     <nav class="navbar{{ if ne .Title "Home" }} navbar-expand-md{{ end }}">
         <div class="prim-cont d-flex align-items-center">
             <a class="navbar-brand" href="/">
-                <span class="h2 p-2 m-0 text-body">
-                    <img src="/images/logo-v1.0.webp" alt="Rocky Hutchins logo">
+                <span class="color-trail h2 p-2 m-0 text-body">
+                    {{ $logo := resources.GetMatch "/images/logo.webp" }}
+                    {{ $logo := $logo.Resize "50x webp" }}
+                    <img src="{{ $logo.RelPermalink }}" alt="Rocky Hutchins logo">
                 </span>
             </a>
             <button 
