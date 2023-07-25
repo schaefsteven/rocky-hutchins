@@ -138,6 +138,10 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     width: auto;
 }
 
+.nav-link h1 {
+    all: unset;
+}
+
 .album-wrapper, .video-wrapper {
     width: 100%;
     overflow: clip;

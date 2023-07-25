@@ -45,7 +45,9 @@
                                 class="nav-link{{ if $active }} active{{ end }}"
                                 href="{{ .URL }}"
                             >
-                                {{ .Title }}
+                                {{ if (and $active (not .Page.Params.hasH1)) }}<h1>{{ end }}
+                                    {{ .Title }}
+                                {{ if (and $active (not .Page.Params.hasH1)) }}</h1>{{ end }}
                             </a>
                         </li>
                     {{ end }}
