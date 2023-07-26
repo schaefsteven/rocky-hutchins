@@ -24,3 +24,6 @@ baseURL = ''
     [[module.mounts]]
         source="favicon"
         target="static"
+
+[build]
+    writeStats = true

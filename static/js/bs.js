@@ -1,14 +1,14 @@
 // Bootstrap imports
-// import '/node_modules/bootstrap/js/dist/alert.js';
-// import '/node_modules/bootstrap/js/dist/button.js';
-// import '/node_modules/bootstrap/js/dist/carousel.js';
+// import '/node_modules/bootstrap/js/src/alert.js';
+// import '/node_modules/bootstrap/js/src/button.js';
+// import '/node_modules/bootstrap/js/src/carousel.js';
 import '/node_modules/bootstrap/js/src/collapse.js';
-// import '/node_modules/bootstrap/js/dist/dropdown.js';
-// import '/node_modules/bootstrap/js/dist/modal.js';
-// import '/node_modules/bootstrap/js/dist/offcanvas.js';
-// import '/node_modules/bootstrap/js/dist/popover.js';
-// import '/node_modules/bootstrap/js/dist/scrollspy.js';
-// import '/node_modules/bootstrap/js/dist/tab.js';
-// import '/node_modules/bootstrap/js/dist/toast.js';
-// import '/node_modules/bootstrap/js/dist/tooltip.js';
+// import '/node_modules/bootstrap/js/src/dropdown.js';
+// import '/node_modules/bootstrap/js/src/modal.js';
+// import '/node_modules/bootstrap/js/src/offcanvas.js';
+// import '/node_modules/bootstrap/js/src/popover.js';
+// import '/node_modules/bootstrap/js/src/scrollspy.js';
+// import '/node_modules/bootstrap/js/src/tab.js';
+// import '/node_modules/bootstrap/js/src/toast.js';
+// import '/node_modules/bootstrap/js/src/tooltip.js';
 

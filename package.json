@@ -6,12 +6,15 @@
   "scripts": {
     "build": "npm run hugo:build",
     "serve": "npm run hugo:serve",
+    "test-prod": "npm run hugo:serve-prod",
     "hugo:build": "hugo",
-    "hugo:serve": "hugo serve"
+    "hugo:serve": "hugo serve",
+    "hugo:serve-prod": "hugo serve --environment production"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@popperjs/core": "^2.11.8",
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.0-alpha3",
