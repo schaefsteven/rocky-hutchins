@@ -1,14 +1,16 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-    content: [ './hugo_stats.json' ],
-    defaultExtractor: (content) => {
-        let els = JSON.parse(content).htmlElements;
-        return els.tags.concat(els.classes, els.ids);
-    }
+const purgecss = require("@fullhuman/postcss-purgecss")({
+  content: ["./hugo_stats.json"],
+  defaultExtractor: (content) => {
+    const els = JSON.parse(content).htmlElements;
+    return [...(els.tags || []), ...(els.classes || []), ...(els.ids || [])];
+  },
+  safelist: [],
 });
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
-     plugins: [
-         ...(process.env.HUGO_ENVIRONMENT === 'production' ? [ purgecss ] : [])
-     ]
- };
+  plugins: [
+    ...(process.env.HUGO_ENVIRONMENT === "production" ? [purgecss] : []),
+  ],
+};
 
