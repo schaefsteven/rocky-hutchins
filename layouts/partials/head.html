@@ -33,7 +33,7 @@
     {{ $postCssOpt := (dict "use" "autoprefixer") }}
     {{ $style := $sass | toCSS $toCssOpt | postCSS $postCssOpt }}
     {{ if hugo.IsProduction }}
-        {{ $style = $style | minify | fingerprint | postCSS }}
+        {{ $style = $style | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 </head>
