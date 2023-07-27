@@ -31,7 +31,7 @@
     {{ $sass := resources.Get "scss/styles.scss" }}
     {{ $toCssOpt := (dict "includePaths" "node_modules" "targetPath" "/assets/css/styles.css") }}
     {{ $postCssOpt := (dict "use" "autoprefixer") }}
-    {{ $style := $sass | toCSS $toCssOpt }}
+    {{ $style := $sass | toCSS $toCssOpt | postCSS $postCssOpt }}
     {{ if hugo.IsProduction }}
         {{ $style = $style | minify | fingerprint | postCSS }}
     {{ end }}
