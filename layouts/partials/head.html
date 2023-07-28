@@ -31,9 +31,9 @@
     {{ $sass := resources.Get "scss/styles.scss" }}
     {{ $toCssOpt := (dict "includePaths" "node_modules" "targetPath" "/assets/css/styles.css") }}
     {{ $postCssOpt := (dict "use" "autoprefixer") }}
-    {{ $style := $sass | toCSS $toCssOpt | postCSS $postCssOpt }}
+    {{ $style := $sass | toCSS $toCssOpt | resources.PostCSS $postCssOpt }}
     {{ if hugo.IsProduction }}
-        {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+        {{ $style = $style | resources.PostProcess }}
     {{ end }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 </head>

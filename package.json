@@ -21,7 +21,8 @@
     "bootstrap-icons": "^1.10.5",
     "hugo-bin": "^0.102.0",
     "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "serve": "^14.2.0"
   },
   "hugo-bin": {
     "buildTags": "extended"

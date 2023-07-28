@@ -8,6 +8,7 @@
                     <img src="{{ $logo.RelPermalink }}" alt="Rocky Hutchins logo">
                 </span>
             </a>
+            {{ if hugo.IsProduction }}Production{{ end }}
             <button 
                 class="navbar-toggler" 
                 type="button" 
