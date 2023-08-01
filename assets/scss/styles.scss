@@ -209,11 +209,11 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 iframe {
-    opacity: 20%;
-    background-color: white;
+    opacity: 10%;
+    background-color: grey;
     &.loaded {
         /*! purgecss ignore current */
-        transition: opacity 1s;
+        transition: opacity 1s ease;
         opacity: 100%;
     }
 }
