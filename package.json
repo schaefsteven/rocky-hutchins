@@ -6,10 +6,9 @@
   "scripts": {
     "build": "npm run hugo:build",
     "serve": "npm run hugo:serve",
-    "test-prod": "npm run hugo:serve-prod",
+    "prod": "npm run hugo:build && serve public",
     "hugo:build": "hugo",
-    "hugo:serve": "hugo serve",
-    "hugo:serve-prod": "hugo serve --environment production"
+    "hugo:serve": "hugo serve"
   },
   "author": "",
   "license": "ISC",

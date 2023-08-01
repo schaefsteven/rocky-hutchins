@@ -5,7 +5,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         return els.tags.concat(els.classes, els.ids);
     }, 
     safelist: { 
-        standard: ['collapsing', 'collapse', 'collapsed', 'loaded'], 
         deep: [/data-bs/]
     },
     variables: true

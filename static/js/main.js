@@ -7,13 +7,3 @@ for (iframe of iframes) {
     }
 }
 
-// utility classes to activate animations once page has finished loading
-const waitingElements = document.querySelectorAll(".wait")
-
-function addAnimate() {
-    for (el of waitingElements) {
-        el.classList.add("animate")
-    }
-}
-window.onload = setTimeout(addAnimate, 500)
-
