@@ -1,4 +1,5 @@
 ---
 title: Facebook
-link: "https://www.facebook.com"
+link: https://www.facebook.com
+icon: facebook
 ---

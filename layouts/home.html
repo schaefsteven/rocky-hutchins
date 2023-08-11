@@ -24,4 +24,11 @@
             </div>
         </div>
     </section>
+    <section class="prim-sec">
+        <div class="prim-cont d-flex justify-content-center p-3">
+            {{ range (where .Site.RegularPages "Section" "links") }}
+                {{ partial "icon-link" . }}
+            {{ end }}
+        </div>
+    </section>
 {{ end }}
