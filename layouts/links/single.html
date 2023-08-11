@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <section class="prim-sec">
+        <div class="prim-cont d-flex flex-column align-items-center">
+            <h1 class="mt-5">Redirecting you now to {{ .Title }}</h1>
+            <p class="mt-4">If you are not automatically redirected, you can click 
+                <a href="{{ .Params.link }}">here</a>
+            </p>
+        </div>
+    </section>
+    <script>
+        window.location.replace({{ .Params.link }})
+    </script>
+{{ end }}
