@@ -1,4 +1,22 @@
 {{ define "main" }}
+    <section class="prim-sec">
+        <div class="prim-cont d-flex flex-column align-items-center px-4 p-md-5">
+            <h2 class="listen-on">
+                Listen on:
+            </h2>
+            <div class="listen-links d-flex justify-content-between py-3 flex-wrap w-100">
+                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
+                    <i class="bi bi-apple"></i>
+                </a>
+                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
+                    <i class="bi bi-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </section>
     {{ range $i, $page := .Pages }}
         {{ .Scratch.Set "i" $i }}
         <section class="prim-sec">
