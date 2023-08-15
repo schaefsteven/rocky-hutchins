@@ -1,0 +1,4 @@
+[[headers]]
+    for = "/test-vcf.vcf"
+    [headers.values]
+        Content-Disposition = "inline;filename='test-vcf.vcf'"
