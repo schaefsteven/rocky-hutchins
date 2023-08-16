@@ -1,6 +1,17 @@
 title = 'Rocky Hutchins'
 baseURL = ''
 
+[menu]
+    [[menu.hero]]
+        name = 'Work With Me'
+        title = 'Work With Me'
+        URL = '/#work-with-me'
+        weight = 100
+    [[menu.hero]]
+        name = 'Show Dates'
+        title = 'Show Dates'
+        URL = '/#upcoming-shows'
+
 [params]
     primEmail = "info@example.com"
     primPhone = "(123) 456-7890"

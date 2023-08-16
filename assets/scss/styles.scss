@@ -94,6 +94,15 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     }
 }
 
+.dark-shadow {
+    filter: 
+        drop-shadow(0px 0px 5px black)
+        drop-shadow(0px 0px 5px black)
+        drop-shadow(0px 0px 5px black)
+        drop-shadow(0px 0px 5px black)
+        drop-shadow(0px 0px 5px black);
+}
+
 .home-hero .overlay {
     $height: 70svh;
     min-height: $height;
@@ -108,12 +117,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
         }
     }
     p, li, h1 {
-        filter: 
-            drop-shadow(0px 0px 5px black)
-            drop-shadow(0px 0px 5px black)
-            drop-shadow(0px 0px 5px black)
-            drop-shadow(0px 0px 5px black)
-            drop-shadow(0px 0px 5px black);
+        @extend .dark-shadow;
     }
     p, li {
         font-family: 'Roboto Mono', monospace;
@@ -143,7 +147,6 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
     a {
         color: inherit;
         text-decoration: none;
-        @extend .fs-3;
     }
 }
 
@@ -219,32 +222,23 @@ iframe {
     }
 }
 
+.subtle-border {
+    border: 2px solid $subtle-grey;
+}
+
 .headshot {
-    max-width: 400px;
+    max-width: Min(200px, 50%);
     width: 100%;
 }
 
-.contact-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    > * {
-        margin: 1rem;
-        white-space: nowrap;
-        min-width: min-content;
-    }
-    .btn {
-        /*background-attachment: fixed;
-        background-image: linear-gradient(90deg, $primary 10%, $secondary 90%);
-        @media screen and (min-width: 992px) {
-            background-image: linear-gradient(90deg, $primary 30%, $secondary 70%);
-        }
-        @media screen and (min-width: 1200px) {
-            background-image: linear-gradient(90deg, $primary 35%, $secondary 65%);
-        }*/
-    }
+.contact {
+    //background-color: $subtle-grey;
+    @extend .subtle-border;
+    width: 100%;
+    max-width: 400px;
+    margin: 0rem 0.5rem 1rem 0.5rem;
 }
+
 
 .links-list {
     max-width: 400px;

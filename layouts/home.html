@@ -5,15 +5,22 @@
             <div class="overlay ps-2">
                 <h1 class="mt-4 fw-normal">Hi, I'm Rocky Hutchins</h1>
                 <p class="mt-4 fs-md-4 hero-tagline">Drummer, Audio Engineer, Multi-instrumentalist, Artist, Live and Studio Musician</p>
-                <ul class="home-hero-links mt-5">
-                    {{ range .Site.Menus.hero }}
-                        <li>
-                            <a class="color-hover" href="{{ .URL }}">
-                                {{ .Title }}
-                            </a>
-                        </li>
+                <nav>
+                    <ul class="home-hero-links my-5">
+                        {{ range .Site.Menus.hero }}
+                            <li>
+                                <a class="color-hover fs-3" href="{{ .URL }}">
+                                    {{ .Title }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </nav>
+                <div class="d-flex justify-content-start mt-4 py-3 flex-wrap dark-shadow">
+                    {{ range (where .Site.RegularPages "Section" "links") }}
+                        {{ partial "icon-link" . }}
                     {{ end }}
-                </ul>
+                </div>
                 {{ $heroImg := resources.GetMatch "images/hero.jpg" }}
                 {{ $heroImg := $heroImg.Resize "550x webp" }}
                 <img 
@@ -24,15 +31,70 @@
             </div>
         </div>
     </section>
-    <section class="prim-sec">
+    <section id="upcoming-shows" class="prim-sec">
+        <div class="prim-cont d-flex flex-column align-items-center subtle-border">
+            <h2 class="mt-3">Upcoming Shows</h2>
+            <p>No shows currently scheduled. Check back soon!</p>
+        </div>
+    </section>
+    <section id="work-with-me" class="prim-sec">
         <div class="prim-cont d-flex flex-column align-items-center">
-            <h2 class="mt-3">Connect with me</h2>
-            <div class="d-flex justify-content-center py-3 flex-wrap">
-                {{ range (where .Site.RegularPages "Section" "links") }}
-                    {{ partial "icon-link" . }}
-                {{ end }}
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+                <img 
+                    class="rounded-circle p-md-3 headshot" 
+                    src="/images/headshot.jpg" 
+                    alt="Rocky Hutchins headshot"
+                >
+                <p class="pitch p-2 fs-5 m-0">
+                    {{ .Params.pitch }}
+                </p>
             </div>
-            <a href="/test-vcf.vcf">Test Contact Link</a>
+            <a 
+                class="btn btn-primary fw-bold my-4 mt-3"
+                href="/test-vcf.vcf"
+            >
+                <i class="bi bi-person-vcard-fill"></i> Add me to your contacts
+            </a>
+            <div class="d-flex flex-wrap justify-content-center w-100">
+                <div class="contact d-flex flex-column align-items-center p-1">
+                    <span class="phone fs-5 p-2">
+                        Phone: {{ .Site.Params.primPhone }}
+                        <a class="copy-btn btn btn-dark ms-2 mb-1" href="">
+                            <i class="bi bi-clipboard2-fill"></i>
+                        </a>
+                    </span>
+                    <div class="p-2">
+                        <a 
+                            href="tel:{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}" 
+                            class="btn btn-primary fw-bold mx-3"
+                        >
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                        <a 
+                            href="sms:+{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}" 
+                            class="btn btn-primary fw-bold mx-3"
+                        >
+                            <i class="bi bi-chat-square-text-fill"></i> Text
+                        </a>
+                    </div>
+                </div>
+                <div class="contact d-flex flex-column align-items-center p-1">
+                    <span class="phone fs-5 p-2">
+                        Email: {{ .Site.Params.primEmail }}
+                        <a class="copy-btn btn btn-dark ms-2 mb-1" href="">
+                            <i class="bi bi-clipboard2-fill"></i>
+                        </a>
+                    </span>
+                    <div class="p-2">
+                        <a 
+                            href="mailto:{{ .Site.Params.primEmail }}?subject={{ htmlEscape "Website Inquiry" }}" 
+                            class="btn btn-primary fw-bold"
+                        >
+                            <i class="bi bi-envelope-fill"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 {{ end }}
