@@ -1,0 +1,27 @@
+<div class="overlay ps-2">
+    <h1 class="mt-4 fw-normal">Hi, I'm Rocky Hutchins</h1>
+    <p class="mt-4 fs-md-4 hero-tagline">Drummer, Audio Engineer, Multi-instrumentalist, Artist, Live and Studio Musician</p>
+    <nav>
+        <ul class="home-hero-links my-5">
+            {{ range .Site.Menus.hero }}
+                <li>
+                    <a class="color-hover fs-3" href="{{ .URL }}">
+                        {{ .Title }}
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-start mt-4 py-3 flex-wrap dark-shadow">
+        {{ range (where .Site.RegularPages "Section" "links") }}
+            {{ partial "icon-link" . }}
+        {{ end }}
+    </div>
+    {{ $heroImg := resources.GetMatch "images/hero.jpg" }}
+    {{ $heroImg := $heroImg.Resize "550x webp" }}
+    <img 
+        src="{{ $heroImg.RelPermalink }}" 
+        alt="Rocky Hutchins playing drums"
+        class="behind-overlay"
+    >
+</div>

@@ -226,6 +226,16 @@ iframe {
     border: 2px solid $subtle-grey;
 }
 
+#work-with-me > .prim-cont {
+    @media screen and (min-width: 768px) {
+        min-height: 70svh;
+    }
+}
+
+.show-calendar {
+    min-height: 150px;
+}
+
 .headshot {
     max-width: Min(200px, 50%);
     width: 100%;
