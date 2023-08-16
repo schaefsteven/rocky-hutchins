@@ -1,6 +1,6 @@
 BEGIN:VCARD
 VERSION:2.1
-N:John;Smith;;;
+N:Smith;John;;;
 FN:John Smith
 TEL;CELL:123-456-7890
 END:VCARD
