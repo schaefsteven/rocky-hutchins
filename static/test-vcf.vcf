@@ -1,7 +1,6 @@
 BEGIN:VCARD
 VERSION:2.1
-N:Coburn;Aaronnew;;;
-FN:Aaron Coburn
-TEL;CELL:706-564-1234
-ORG:Sweetwater
+N:John;Smith;;;
+FN:John Smith
+TEL;CELL:123-456-7890
 END:VCARD
