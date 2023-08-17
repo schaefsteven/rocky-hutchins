@@ -10,11 +10,16 @@
                                 {{ .Params.showDate | time.Format "Jan 02" }}
                             </span>
                         </div>
-                        <div class="col col-9 show-details">
-                            <h3 class="fs-5">{{ .Params.location }}</h3>
-                            <span class="show-time">
-                                {{ .Params.showDate | time.Format "3:04 pm" }}
-                            </span>
+                        <div class="col col-9 show-details pe-3">
+                            <h3 class="fs-5">{{ .Params.city }}</h3>
+                            <div class="time-and-venue d-flex flex-wrap-reverse pe-3"> 
+                                <span class="show-time pe-3">
+                                    {{ .Params.showDate | time.Format "3:04 pm" }}
+                                </span>
+                                <span class="show-venue">
+                                    {{ .Params.venue }}
+                                </span>
+                            </div>
                             {{ with .Params.description }}
                                 <p class="mt-3 mb-0">{{ . }}</p>
                             {{ end }}
