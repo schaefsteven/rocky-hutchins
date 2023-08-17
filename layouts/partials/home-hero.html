@@ -12,10 +12,19 @@
             {{ end }}
         </ul>
     </nav>
-    <div class="d-flex justify-content-start mt-4 py-3 flex-wrap dark-shadow">
-        {{ range (where .Site.RegularPages "Section" "links") }}
-            {{ partial "icon-link" . }}
+    <div class="hero-icons d-flex justify-content-start mt-4 py-3 flex-wrap dark-shadow">
+        {{ $links := where .Site.RegularPages "Section" "links" }}
+        {{ $linksLen := len $links }}
+        {{ $wrapLen := 3 }}
+        <div class="d-flex">
+        {{ range $i, $v := $links }}
+            {{ if eq (mod (sub $linksLen $i) $wrapLen) 0 }}
+                </div>
+                <div class="d-flex">
+            {{ end }}
+            {{ partial "icon-link" $v }}
         {{ end }}
+        </div>
     </div>
     {{ $heroImg := resources.GetMatch "images/hero.jpg" }}
     {{ $heroImg := $heroImg.Resize "550x webp" }}

@@ -1,19 +1,19 @@
 {{ define "main" }}
-    <section class="prim-sec">
-        <div class="prim-cont d-flex flex-column align-items-center px-4 p-md-5">
-            <h2 class="listen-on">
-                Listen on:
-            </h2>
-            <div class="listen-links d-flex justify-content-between py-3 flex-wrap w-100">
-                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
-                    <i class="bi bi-apple"></i>
-                </a>
-                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a href="applemusic.com" class="icon-link text-body color-hover fs-1 px-3 pb-3">
-                    <i class="bi bi-spotify"></i>
-                </a>
+    <section class="prim-sec pb-0">
+        <div class="prim-cont d-flex justify-content-center">
+            <div class="listen-on px-2 pt-2 py-md-3">
+                <div class="d-flex justify-content-start align-items-center flex-wrap">
+                    <h2 class="p-0 m-0 me-3">
+                        Listen on:
+                    </h2>
+                    <div class="listen-links d-flex flex-wrap">
+                        {{ range (where .Site.RegularPages "Section" "links") }}
+                            {{ if .Params.musicLink }}
+                                {{ partial "icon-link.html" . }}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
             </div>
         </div>
     </section>

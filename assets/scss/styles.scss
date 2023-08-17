@@ -149,6 +149,19 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
         color: inherit;
         text-decoration: none;
     }
+    .hero-icons {
+        margin-left: -1.4rem;
+        @media screen and (min-width: 768px) {
+            margin-left: -2.9rem;
+        }
+        a {
+            display: block;
+            width: 3.5rem;
+            @media screen and (min-width: 768px) {
+                width: 5.5rem;
+            }
+        }
+    }
 }
 
 .color-trail {
@@ -285,8 +298,16 @@ iframe {
     }
 }
 
+div.listen-on {
+    width: 100%;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
+    }
+}
+
 .listen-links {
-    max-width: 400px;
+    margin-bottom: -1.9rem;
+    margin-left: -1.5rem;
 }
 
 
