@@ -4,11 +4,19 @@
         src="/images/headshot.jpg" 
         alt="Rocky Hutchins headshot"
     >
-    <p class="pitch p-2 fs-5 m-0">
+    <p class="pitch px-2 py-md-5 py-3 fs-5 m-0">
         {{ .Params.pitch }}
     </p>
 </div>
 <div class="d-flex flex-wrap justify-content-center w-100">
+    <div class="contact d-flex justify-content-between px-4 py-3 mb-3 text-primary">
+        <div class="left">
+            <i class="bi bi-person-plus-fill me-1"></i>
+            Add me to your contacts
+        </div>
+        <div class="right">
+        </div>
+    </div>
     <div class="contact d-flex justify-content-between px-4 py-3 mb-3">
         <div class="left">
             {{ .Site.Params.primPhone }}
@@ -39,9 +47,3 @@
         </div>
     </div>
 </div>
-<a 
-    class="btn btn-primary fw-bold my-4 mt-3"
-    href="/test-vcf.vcf"
->
-    <i class="bi bi-person-vcard-fill"></i> Add me to your contacts
-</a>
