@@ -4,7 +4,7 @@
 // import '/node_modules/bootstrap/js/src/carousel.js';
 import '/node_modules/bootstrap/js/src/collapse.js';
 // import '/node_modules/bootstrap/js/src/dropdown.js';
-// import '/node_modules/bootstrap/js/src/modal.js';
+import '/node_modules/bootstrap/js/src/modal.js';
 // import '/node_modules/bootstrap/js/src/offcanvas.js';
 // import '/node_modules/bootstrap/js/src/popover.js';
 // import '/node_modules/bootstrap/js/src/scrollspy.js';

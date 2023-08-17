@@ -1,3 +1,4 @@
+<!-- Headshot and pitch -->
 <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
     <img 
         class="rounded-circle p-md-3 headshot" 
@@ -8,19 +9,53 @@
         {{ .Params.pitch }}
     </p>
 </div>
+<!-- Contact Lines and Buttons -->
 <div class="d-flex flex-wrap justify-content-center w-100">
-    <div class="contact d-flex justify-content-between px-4 py-3 mb-3 text-primary">
-        <div class="left">
-            <i class="bi bi-person-plus-fill me-1"></i>
-            Add me to your contacts
+    <!-- Add button -->
+    <button 
+        class="contact text-primary px-4 py-3 mb-3 text-start"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#contact-modal"
+    >
+        <i class="bi bi-person-plus-fill me-1"></i>
+        Add me to your contacts
+    </button>
+    <!-- Contact Modal -->
+    <div 
+        class="modal fade" 
+        id="contact-modal" 
+        tabindex="-1" 
+        aria-labelledby="contact-modal-label" 
+        aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contact-modal-label">Add Contact</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>This will download a file called rocky-hutchins.vcf, which you can then import into your contacts</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Cancel</button>
+            <a 
+                type="button" 
+                class="btn btn-primary"
+                href="/test-vcf.vcf"
+            >
+                Download
+            </a>
+          </div>
         </div>
-        <div class="right">
-        </div>
+      </div>
     </div>
+    <!-- Phone -->
     <div class="contact d-flex justify-content-between px-4 py-3 mb-3">
         <div class="left">
             {{ .Site.Params.primPhone }}
-            <button class="ps-1">
+            <button class="ps-1 copy">
                 <i class="copy bi bi-clipboard2"></i>
             </button>
         </div>
@@ -33,10 +68,11 @@
             </a>
         </div>
     </div>
+    <!-- Email -->
     <div class="contact d-flex justify-content-between px-4 py-3 mb-3">
         <div class="left">
             {{ .Site.Params.primEmail }}
-            <button class="ps-1">
+            <button class="ps-1 copy">
                 <i class="copy bi bi-clipboard2"></i>
             </button>
         </div>

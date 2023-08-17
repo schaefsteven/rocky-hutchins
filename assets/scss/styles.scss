@@ -50,9 +50,9 @@ $code-color: #48E91D;
 //@import "../node_modules/bootstrap/scss/alert";
 //@import "../node_modules/bootstrap/scss/progress";
 //@import "../node_modules/bootstrap/scss/list-group";
-//@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/toasts";
-//@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/modal";
 //@import "../node_modules/bootstrap/scss/tooltip";
 //@import "../node_modules/bootstrap/scss/popover";
 //@import "../node_modules/bootstrap/scss/carousel";
@@ -261,17 +261,20 @@ iframe {
     max-width: 450px;
     background-color: $subtle-grey;
     border-radius: 0.5rem;
+    border: none;
     margin: 0rem 0.5rem 1rem 0.5rem;
     a {
         text-decoration: none;
     }
-    button {
+    .copy {
         background: none;
         border: none;
-    }
-    .copy {
         color: $dimmed-white;
     }
+}
+
+.modal-header, .modal-footer, .btn-subtle {
+    border-color: $subtle-grey;
 }
 
 .links-list {
