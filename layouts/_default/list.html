@@ -1,8 +1,4 @@
 {{ define "main" }}
     {{"<!-- layouts/_default/list.html-->" | safeHTML }}
-    <ul>
-        {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
+    {{ partial "404.html" . }}
 {{ end }}
