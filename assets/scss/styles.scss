@@ -150,6 +150,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
         text-decoration: none;
     }
     .hero-icons {
+        max-width: 650px;
         margin-left: -1.4rem;
         @media screen and (min-width: 768px) {
             margin-left: -2.9rem;
