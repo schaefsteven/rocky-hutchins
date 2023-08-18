@@ -5,7 +5,7 @@ baseURL = ''
     [[menu.hero]]
         name = 'Work With Me'
         title = 'Work With Me'
-        URL = '/#work-with-me'
+        URL = '#work-with-me'
         weight = 100
     [[menu.hero]]
         name = 'Show Dates'
