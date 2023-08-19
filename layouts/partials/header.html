@@ -35,7 +35,13 @@
                         {{ $identifier = .Title }}
                     {{ end }} 
                     {{ range .Site.Menus.main }}
-                        {{ $navIdentifier := .Page.Section }}
+                        {{ $navIdentifier := "noPage" }}
+                        {{ with .Page }}
+                            {{ $navIdentifier = "" }}
+                            {{ with .Section }}
+                                {{ $navIdentifier = . }}
+                            {{ end }}
+                        {{ end }}
                         {{ if eq $navIdentifier "" }}
                             {{ $navIdentifier = .Page.Title }}
                         {{ end }}
