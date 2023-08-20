@@ -5,6 +5,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         return els.tags.concat(els.classes, els.ids);
     }, 
     safelist: { 
+        standard: ['bi-clipboard2-check-fill'],
         deep: [/data-bs/]
     },
     variables: true
