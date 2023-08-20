@@ -286,6 +286,7 @@ iframe {
         color: $dimmed-white;
     }
     .copy-success {
+        /*! purgecss ignore current */
         transition: color 1s linear(0, 1 20%, 0 40%, 1 60%, 0 80%, 1);
         color: $primary;
     }
