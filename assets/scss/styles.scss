@@ -77,9 +77,7 @@ $utilities: map-merge(
 
 // Bootstrap Icons
 $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2') format("woff2"), url('/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff') format('woff');
-/*! purgecss start ignore */
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
-/*! purgecss end ignore */
 
 // Custom Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap');
