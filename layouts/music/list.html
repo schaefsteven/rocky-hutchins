@@ -2,11 +2,11 @@
     <section class="prim-sec pb-0">
         <div class="prim-cont d-flex justify-content-center">
             <div class="listen-on px-2 pt-2 py-md-3">
-                <div class="d-flex justify-content-start align-items-center flex-wrap">
-                    <h2 class="p-0 m-0 me-3">
+                <div class="d-flex justify-content-start align-items-center">
+                    <h2 class="p-0 m-0 me-3 text-nowrap">
                         Listen on:
                     </h2>
-                    <div class="listen-links d-flex flex-wrap">
+                    <div class="listen-links d-flex flex-wrap justify-content-between justify-content-md-start px-2">
                         {{ range (where .Site.RegularPages "Section" "links") }}
                             {{ if .Params.musicLink }}
                                 {{ partial "icon-link.html" . }}
