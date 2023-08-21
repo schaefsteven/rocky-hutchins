@@ -1,7 +1,7 @@
 ---
 title: test
 link: https://test.com
-iconSet: 'bi bi-'
-icon: umbrella
+iconSet: 'fa-brands fa-'
+icon: internet-explorer
 musicLink: true
 ---

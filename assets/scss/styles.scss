@@ -159,13 +159,14 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
         @media screen and (min-width: 768px) {
             margin-left: -2.9rem;
         }
-        a {
-            display: block;
-            width: 3.5rem;
-            @media screen and (min-width: 768px) {
-                width: 5.5rem;
-            }
-        }
+    }
+}
+
+.icon-link {
+    display: block;
+    width: 3.5rem;
+    @media screen and (min-width: 768px) {
+        width: 5.5rem;
     }
 }
 
@@ -316,8 +317,15 @@ div.listen-on {
 }
 
 .listen-links {
+    width: 100%;
     margin-bottom: -1.9rem;
     margin-left: -1.5rem;
+    .icon-link {
+        @media screen and (max-width: 455px) {
+            padding-left: 0.5rem !important;
+            width: 2rem;
+        }
+    }
 }
 
 
