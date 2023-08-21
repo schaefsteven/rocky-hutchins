@@ -78,6 +78,10 @@ $utilities: map-merge(
 // Bootstrap Icons
 $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2') format("woff2"), url('/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff') format('woff');
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+// Fontawesome Icons
+$fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
 // Custom Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap');
