@@ -105,7 +105,7 @@ $bootstrap-icons-font-src: url('/node_modules/bootstrap-icons/font/fonts/bootstr
 }
 
 .home-hero .overlay {
-    $height: 70svh;
+    $height: Max(70svh, Min(600px, 90svw));
     min-height: $height;
     > .behind-overlay {
         top: 0px;
