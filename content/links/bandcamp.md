@@ -1,6 +1,7 @@
 ---
 title: Bandcamp
 link: https://bandcamp.com
-icon: circle-fill
+iconSet: 'fa-brands fa-'
+icon: bandcamp
 musicLink: true
 ---
