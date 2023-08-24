@@ -17,6 +17,15 @@ baseURL = ''
     primEmail = "info@example.com"
     primPhone = "(123) 456-7890"
 
+[mediaTypes]
+    [mediaTypes."text/vcf"]
+    suffixes = ["vcf"]
+
+[outputFormats.VCF]
+mediaType = "text/vcf"
+isPlainText = true
+notAlternative = true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.parser]
