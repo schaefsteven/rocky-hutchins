@@ -1,5 +1,5 @@
 title = 'Rocky Hutchins'
-baseURL = ''
+baseURL = 'https://rockyhutchins.com'
 
 [menu]
     [[menu.hero]]
@@ -14,8 +14,10 @@ baseURL = ''
         weight = 100
 
 [params]
-    primEmail = "info@example.com"
-    primPhone = "(123) 456-7890"
+    primEmail = "hockyrutchins@gmail.com"
+    primPhone = "(517) 630-1783"
+    firstName = "Rocky"
+    lastName = "Hutchins"
 
 [mediaTypes]
     [mediaTypes."text/vcf"]

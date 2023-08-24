@@ -1,6 +1,9 @@
 BEGIN:VCARD
 VERSION:2.1
-N:Smith;John;;;
-FN:John Smith
+N:{{ .Site.Params.lastName }};{{ .Site.Params.firstName }};;;
+FN:{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}
 TEL;CELL:{{ .Site.Params.primPhone }}
+EMAIL;HOME:{{ .Site.Params.primEmail }}
+URL:{{ .Site.BaseURL }}
+NOTE:{{ .Site.Home.Params.tagline }}\n{{ .Site.Home.Params.pitch }}
 END:VCARD
