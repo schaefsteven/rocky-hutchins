@@ -1,3 +1,5 @@
+{{- $img := resources.Get "images/headshot.jpg" -}}
+{{- $img = $img.Fill "300x300 jpg" -}}
 BEGIN:VCARD
 VERSION:2.1
 N:{{ .Site.Params.lastName }};{{ .Site.Params.firstName }};;;
@@ -5,5 +7,6 @@ FN:{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}
 TEL;CELL:{{ .Site.Params.primPhone }}
 EMAIL;HOME:{{ .Site.Params.primEmail }}
 URL:{{ .Site.BaseURL }}
-NOTE:{{ .Site.Home.Params.tagline }}\n{{ .Site.Home.Params.pitch }}
+PHOTO;ENCODING=BASE64;JPEG:{{ $img.Content | base64Encode }}
+NOTE:{{ .Site.Home.Params.tagline }}
 END:VCARD
