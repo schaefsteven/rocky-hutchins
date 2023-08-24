@@ -7,21 +7,11 @@ baseURL = ''
         title = 'Work With Me'
         URL = '/#work-with-me'
         weight = 100
-    [[menu.hero]]
-        name = 'Show Dates'
-        title = 'Show Dates'
-        URL = '/#upcoming-shows'
-        weight = 101
     [[menu.main]]
         name = 'Work With Me'
         title = 'Work With Me'
         URL = '/#work-with-me'
         weight = 100
-    [[menu.main]]
-        name = 'Show Dates'
-        title = 'Show Dates'
-        URL = '/#upcoming-shows'
-        weight = 101
 
 [params]
     primEmail = "info@example.com"
