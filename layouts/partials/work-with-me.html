@@ -1,9 +1,11 @@
 <h2 class="d-none d-md-block">Work With Me</h2>
 <!-- Headshot and pitch -->
 <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+    {{ $headshot := resources.Get "images/headshot.jpg" }}
+    {{ $headshot = $headshot.Fill "200x200 webp" }}
     <img 
         class="rounded-circle p-md-3 headshot" 
-        src="/images/headshot.jpg" 
+        src="{{ $headshot.RelPermalink }}" 
         alt="Rocky Hutchins headshot"
     >
     <h2 class="d-md-none mt-4 mb-0">Work With Me</h2>

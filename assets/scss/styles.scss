@@ -7,8 +7,10 @@ $body-color-dark: #FFF;
 $subtle-grey: #1B1B1B;
 $dimmed-white: #959595;
 
-$primary: #00C15B;
-$secondary: #05A4B7;
+$primary: #719D97;
+$primary: #8ACCC3;
+$primary: #58C7B8;
+$secondary: #285E73;
 
 $code-color: #48E91D;
 
@@ -350,7 +352,7 @@ div.listen-on {
 }
 
 .text-emphasis-1 {
-    @extend .text-primary;
+    @extend .text-secondary;
     font-weight: bold;
 }
 
