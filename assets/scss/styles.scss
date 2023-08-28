@@ -54,7 +54,9 @@ $code-color: #48E91D;
 //@import "../node_modules/bootstrap/scss/list-group";
 @import "../node_modules/bootstrap/scss/close";
 //@import "../node_modules/bootstrap/scss/toasts";
+/*! purgecss start ignore */
 @import "../node_modules/bootstrap/scss/modal";
+/*! purgecss end ignore */
 //@import "../node_modules/bootstrap/scss/tooltip";
 //@import "../node_modules/bootstrap/scss/popover";
 //@import "../node_modules/bootstrap/scss/carousel";

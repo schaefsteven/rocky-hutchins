@@ -35,23 +35,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="contact-modal-label">Add Contact</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p>This will download a file called rocky-hutchins.vcf, which you can then import into your contacts</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Cancel</button>
-            <a 
-                type="button" 
-                class="btn btn-primary"
-                href="/rocky-hutchins.vcf"
-            >
-                Download
-            </a>
-          </div>
+            {{ partial "contact-modal" . }}
         </div>
       </div>
     </div>

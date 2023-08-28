@@ -1,0 +1,45 @@
+<div class="modal-header">
+    <h2 class="modal-title fs-5" id="contact-modal-label">Add Contact</h2>
+    <button 
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="modal" 
+        aria-label="Close">
+    </button>
+</div>
+<div class="modal-body">
+    <div id="ios-safari" class="d-flex flex-column align-items-center d-none">
+        <p class="w-100">
+            After tapping "Download,"
+            <ol class="w-100">
+                <li>Tap "Create New Contact"</li>
+                <li>Tap "Done" in the top right</li>
+                <li>Tap "Done" in the top left</li>
+            </ol>
+        </p>
+        {{ $img := resources.GetMatch "images/ios-instructions.gif" }}
+        {{ $img = $img.Fit "400x400 gif" }}
+        <img 
+            class="" 
+            loading="lazy"
+            src="{{ $img.RelPermalink }}" 
+            alt="iOS instructions"
+        >
+    </div>
+</div>
+<div class="modal-footer">
+    <button 
+        type="button" 
+        class="btn btn-subtle" 
+        data-bs-dismiss="modal"
+    >
+        Close
+    </button>
+    <a 
+        type="button" 
+        class="btn btn-primary"
+        href="/rocky-hutchins.vcf"
+    >
+        Download
+    </a>
+</div>
