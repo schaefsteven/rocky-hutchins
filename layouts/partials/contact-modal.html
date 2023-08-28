@@ -8,6 +8,9 @@
     </button>
 </div>
 <div class="modal-body">
+    <div id="default-instructions" class="d-none">
+        <p>This will download my contact information to your device, which you can then import to your contacts.</p>
+    </div>
     <div id="ios-safari" class="d-flex flex-column align-items-center d-none">
         <p class="w-100">
             After tapping "Download,"
@@ -25,6 +28,75 @@
             src="{{ $img.RelPermalink }}" 
             alt="iOS instructions"
         >
+    </div>
+    <div id="android-chrome" class="d-flex flex-column align-items-center d-none">
+        <p class="w-100">
+            After tapping "Download,"
+            <ol class="w-100 list-unstyled">
+                <li class="pb-2">
+                    1. Tap "Open" at the top of your screen
+                    {{ $img := resources.GetMatch "images/android-chrome-file-downloaded.png" }}
+                    {{ $img = $img.Fit "400x400 webp" }}
+                    <img 
+                        class="" 
+                        loading="lazy"
+                        src="{{ $img.RelPermalink }}" 
+                        alt="Chrome Instructions"
+                    >
+                </li>
+                <li>
+                    2. Choose which account to import the contact to
+                    {{ $img := resources.GetMatch "images/android-contact-import.png" }}
+                    {{ $img = $img.Fit "400x400 webp" }}
+                    <img 
+                        class="" 
+                        loading="lazy"
+                        src="{{ $img.RelPermalink }}" 
+                        alt="Chrome Instructions"
+                    >
+                </li>
+            </ol>
+        </p>
+    </div>
+    <div id="android-firefox" class="d-flex flex-column align-items-center">
+        <p class="w-100">
+            After tapping "Download,"
+            <ol class="w-100 list-unstyled">
+                <li class="pb-2">
+                    1. Tap "Download" again at the bottom of your screen
+                    {{ $img := resources.GetMatch "images/android-firefox-download.png" }}
+                    {{ $img = $img.Fit "400x400 webp" }}
+                    <img 
+                        class="" 
+                        loading="lazy"
+                        src="{{ $img.RelPermalink }}" 
+                        alt="Firefox Instructions"
+                    >
+                </li>
+                <li class="pb-2">
+                    2. Tap "Open" at the bottom of your screen
+                    {{ $img := resources.GetMatch "images/android-firefox-open.png" }}
+                    {{ $img = $img.Fit "400x400 webp" }}
+                    <img 
+                        class="" 
+                        loading="lazy"
+                        src="{{ $img.RelPermalink }}" 
+                        alt="Firefox Instructions"
+                    >
+                </li>
+                <li>
+                    3. Choose which account to import the contact to
+                    {{ $img := resources.GetMatch "images/android-contact-import.png" }}
+                    {{ $img = $img.Fit "400x400 webp" }}
+                    <img 
+                        class="" 
+                        loading="lazy"
+                        src="{{ $img.RelPermalink }}" 
+                        alt="Firefox Instructions"
+                    >
+                </li>
+            </ol>
+        </p>
     </div>
 </div>
 <div class="modal-footer">
