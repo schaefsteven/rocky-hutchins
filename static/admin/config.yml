@@ -1,50 +1,16 @@
 # use local server when served on localhost
 # need to have decap-server npm package installed and running for this to work
 local_backend: true
-
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+logo_url: https://rh-testing.netlify.app/images/logo_hu3da88bbd86ea0f239f52927e59ca83de_9993_100x0_resize_q75_h2_box_3.webp
+display_url: https://rh-testing.netlify.app
 media_folder: static/img
   # media_library:
   # name: 'disabled' # To disable the media library
 public_folder: /img
 collections:
-
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    filter: {field: 'cmsVisible', value: true }
-    create: true
-    slug: '{{slug}}'
-    path: '{{slug}}/index'
-    media_folder: ''
-    public_folder: ''
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish date', 
-          name: 'date', 
-          widget: 'datetime', 
-          time_format: false, 
-          hint: 'If the Publish Date is in the future, the blog post will not appear on the website until that date.'
-        }
-      - { label: 'Draft', 
-          name: 'draft', 
-          widget: 'boolean', 
-          default: true, 
-          required: false,
-          hint: '**Your post will not publish if this switch is on.** It is on by default. Turn it off in order to make your post go live.'
-        }
-      - { label: 'Featured Image', 
-          name: 'featuredImg', 
-          widget: 'string', 
-          required: false, 
-          hint: 'Use this field to choose which image will be shown in the preview of the blog post (on the home page and in the main blog section.) Simply copy and paste the file name of the image you wish to feature. If no image is specified here, one of the images from the blog post will be chosen at random. If there are no images in the blog post, the default blog post image will be used.'
-        }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'cmsVisible', name: 'cmsVisible', widget: 'hidden', default: true }
 
   - name: 'links'
     label: 'Links'
@@ -73,5 +39,3 @@ collections:
       - { label: 'Link', name: 'link', widget: 'string' }
     summary: "{{position}} {{title}}"
     sortable_fields: ['position', 'title', 'draft']
-      
-# Todo: implement relative media storage via https://github.com/decaporg/decap-cms/issues/1472#issuecomment-503584397
