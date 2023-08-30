@@ -1,5 +1,5 @@
 title = 'Rocky Hutchins'
-baseURL = 'https://rockyhutchins.com'
+baseURL = 'https://rh-testing.netlify.app'
 
 [menu]
     [[menu.hero]]
