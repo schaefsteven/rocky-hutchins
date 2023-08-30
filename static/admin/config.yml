@@ -4,7 +4,7 @@ local_backend: true
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-logo_url: https://rh-testing.netlify.app/images/logo_hu3da88bbd86ea0f239f52927e59ca83de_9993_100x0_resize_q75_h2_box_3.webp
+logo_url: https://rh-testing.netlify.app/logo-full-res.png
 display_url: https://rh-testing.netlify.app
 media_folder: static/img
   # media_library:

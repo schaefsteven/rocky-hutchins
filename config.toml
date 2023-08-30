@@ -47,6 +47,9 @@ notAlternative = true
     [[module.mounts]]
         source="favicon"
         target="static"
+    [[module.mounts]]
+        source="assets/images/logo.png"
+        target="static/logo-full-res.png"
 
 [build]
     writeStats = true
