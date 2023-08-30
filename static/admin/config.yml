@@ -1,4 +1,5 @@
-# when using the default proxy server port
+# use local server when served on localhost
+# need to have decap-server npm package installed and running for this to work
 local_backend: true
 
 backend:
