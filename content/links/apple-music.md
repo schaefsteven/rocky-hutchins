@@ -1,7 +1,7 @@
 ---
 title: Apple Music
 link: https://apple-music.com
-iconSet: 'bi bi-'
+iconSet: bi bi-
 icon: apple
 musicLink: true
 ---
