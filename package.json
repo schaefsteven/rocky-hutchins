@@ -5,24 +5,27 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run hugo:build",
-    "serve": "npm run hugo:serve",
+    "serve": "run-p hugo:serve decap:serve",
     "prod": "npm run hugo:build && serve public",
     "hugo:build": "hugo",
-    "hugo:serve": "hugo serve"
+    "hugo:serve": "hugo serve",
+    "decap:serve": "decap-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@popperjs/core": "^2.11.8",
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.0-alpha3",
     "bootstrap-icons": "^1.10.5",
+    "decap-server": "^3.0.0",
     "hugo-bin": "^0.102.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "serve": "^14.2.0",
-    "@fortawesome/fontawesome-free": "^6.4.2"
+    "serve": "^14.2.0"
   },
   "hugo-bin": {
     "buildTags": "extended"
