@@ -4,7 +4,7 @@
     <!-- Title and Description -->
     <title>{{ if not .IsHome }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ .Site.Title }}: {{ .Title }}{{ with .Summary }} - {{ . }}{{ end }}">
+    <meta name="description" content="{{ .Site.Title }}: {{ .Title }}{{ with .Summary }} - {{ . }}{{ end }}{{ if .Page.IsHome }} - Rocky Hutchins is a professional {{ .Site.Home.Params.tagline | lower }}{{ end }}">
 
     <!-- Google tag (gtag.js) -->
     <script async src=""></script>

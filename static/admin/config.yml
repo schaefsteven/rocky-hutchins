@@ -41,7 +41,7 @@ collections:
         - { label: 'Tagline',
             name: 'tagline',
             widget: 'text',
-            hint: "This is the text at the top of the page underneath \"Hello, I'm Rocky Hutchins\""
+            hint: "This is the text at the top of the page underneath \"Hello, I'm Rocky Hutchins\", and is also used to generate the meta description of the site which is what shows up in the preview on google, so you should keep it as a list of what you are. The meta description is created by taking this text and prefixing \"Rocky Hutchins is a professional\" to it."
           }
 
   - name: 'links'
@@ -94,6 +94,7 @@ collections:
             { label: 'Font Awesome Solid', value: 'fa-solid fa-' },
             { label: 'Font Awesome Regular', value: 'fa-regular fa-' }
             ],
+          default: 'bi bi-',
           hint: 'You can use an icon from any of these libraries: [Bootstrap](https://icons.getbootstrap.com/), [Font Awesome Free](https://fontawesome.com/search?o=r&m=free) (click to search these libraries.) Select the library from the dropdown and specify the name of the icon below'
         }
       - { label: 'Icon Name',
