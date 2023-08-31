@@ -11,23 +11,68 @@ media_folder: static/img
   # name: 'disabled' # To disable the media library
 public_folder: /img
 collections:
+  - name: 'config'
+    label: 'Site Config'
+    files:
+      - name: 'config'
+        label: 'Contact Info'
+        file: 'config.toml'
+        format: 'toml'
+        fields: 
+        - { label: 'Contact Info',
+            name: 'params',
+            widget: 'object',
+            fields: [
+              { label: 'First Name', name: 'firstName', widget: 'string' },
+              { label: 'Last Name', name: 'lastName', widget: 'string' },
+              { label: 'Email', name: 'primEmail', widget: 'string' },
+              { label: 'Phone Number', name: 'primPhone', widget: 'string' },
+            ],
+          }
+      - name: 'homePage'
+        label: 'Home Page'
+        file: 'content/_index.md'
+        fields: 
+        - { label: 'Pitch',
+            name: 'pitch',
+            widget: 'text',
+            hint: 'This is the text in the Work With Me section'
+          }
+        - { label: 'Tagline',
+            name: 'tagline',
+            widget: 'text',
+            hint: "This is the text at the top of the page underneath \"Hello, I'm Rocky Hutchins\""
+          }
 
   - name: 'links'
     label: 'Links'
     label_singular: 'Link'
     folder: 'content/links'
+    filter: {field: visibleInCMS, value: true}
     create: true
     slug: '{{slug}}'
+    summary: "{{position}} {{title}}"
+    sortable_fields: ['position', 'title', 'draft']
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', 
+          name: 'title', 
+          widget: 'string' 
+        }
       - { label: 'Draft', 
           name: 'draft', 
           widget: 'boolean', 
-          default: true, 
+          default: false, 
           required: false,
-          hint: '**Your link will not publish if this switch is on.** It is on by default. Turn it off in order to make your link go live.'
+          hint: 'Drafts are not published on the website.'
+        }
+      - { label: 'Music Platform', 
+          name: 'musicLink', 
+          widget: 'boolean', 
+          default: false, 
+          required: false,
+          hint: 'This will cause the link to show up at the top of the music page'
         }
       - { label: 'Position', 
           name: 'position', 
@@ -36,6 +81,27 @@ collections:
           required: false,
           hint: 'Use this to position your link in the list. Lower numbers move to the top of the list. You can use negative numbers and decimals.'
         }
-      - { label: 'Link', name: 'link', widget: 'string' }
-    summary: "{{position}} {{title}}"
-    sortable_fields: ['position', 'title', 'draft']
+      - { label: 'Link', 
+          name: 'link', 
+          widget: 'string' 
+        }
+      - { label: 'Icon Library',
+          name: 'iconSet',
+          widget: 'select',
+          options: [
+            { label: 'Bootstrap', value: 'bi bi-' },
+            { label: 'Font Awesome Brands', value: 'fa-brands fa-' },
+            { label: 'Font Awesome Solid', value: 'fa-solid fa-' },
+            { label: 'Font Awesome Regular', value: 'fa-regular fa-' }
+            ],
+          hint: 'You can use an icon from any of these libraries: [Bootstrap](https://icons.getbootstrap.com/), [Font Awesome Free](https://fontawesome.com/search?o=r&m=free) (click to search these libraries.) Select the library from the dropdown and specify the name of the icon below'
+        }
+      - { label: 'Icon Name',
+          name: 'icon',
+          widget: 'string',
+          default: 'question-circle-fill'
+        }
+      - { name: visibleInCMS, 
+          default: true, 
+          widget: hidden 
+        }

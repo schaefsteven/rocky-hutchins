@@ -17,7 +17,7 @@
         {{ $linksLen := len $links }}
         {{ $wrapLen := 3 }}
         <div class="d-flex">
-        {{ range $i, $v := $links }}
+        {{ range $i, $v := $links.ByParam "position" }}
             {{ if eq (mod (sub $linksLen $i) $wrapLen) 0 }}
                 </div>
                 <div class="d-flex">

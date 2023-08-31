@@ -1,3 +1,4 @@
 ---
 title: Links
+visibleInCMS: false
 ---

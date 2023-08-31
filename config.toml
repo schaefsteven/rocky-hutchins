@@ -1,55 +1,69 @@
-title = 'Rocky Hutchins'
-baseURL = 'https://rocky-hutchins.com'
-
-[menu]
-    [[menu.hero]]
-        name = 'Work With Me'
-        title = 'Work With Me'
-        URL = '/#work-with-me'
-        weight = 100
-    [[menu.main]]
-        name = 'Work With Me'
-        title = 'Work With Me'
-        URL = '/#work-with-me'
-        weight = 100
+title = "Rocky Hutchins"
+firstName = "Hello"
+baseURL = "https://rocky-hutchins.com"
 
 [params]
-    primEmail = "hockyrutchins@gmail.com"
-    primPhone = "(517) 630-1783"
-    firstName = "Rocky"
-    lastName = "Hutchins"
+primEmail = "hockyrutchins@gmail.com"
+primPhone = "(517) 630-1783"
+firstName = "Rocky"
+lastName = "Hutchins"
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "modus-vivendi"
+
+[module]
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "node_modules"
+target = "static/node_modules"
+
+[[module.mounts]]
+source = "favicon"
+target = "static"
+
+[[module.mounts]]
+source = "assets/images/logo.png"
+target = "static/logo-full-res.png"
+
+[build]
+writeStats = true
 
 [mediaTypes]
-    [mediaTypes."text/vcf"]
-    suffixes = ["vcf"]
+
+[mediaTypes."text/vcf"]
+suffixes = ["vcf"]
+
+[outputFormats]
 
 [outputFormats.VCF]
 mediaType = "text/vcf"
 isPlainText = true
 notAlternative = true
 
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.parser]
-            wrapStandAloneImageWithinParagraph = false
-    [markup.goldmark.renderer]
-         unsafe = true
-    [markup.highlight]
-        style = "modus-vivendi"
+[menu]
 
-[module]
-    [[module.mounts]]
-        source="static"
-        target="static"
-    [[module.mounts]]
-        source="node_modules"
-        target="static/node_modules"
-    [[module.mounts]]
-        source="favicon"
-        target="static"
-    [[module.mounts]]
-        source="assets/images/logo.png"
-        target="static/logo-full-res.png"
+[[menu.hero]]
+name = "Work With Me"
+title = "Work With Me"
+URL = "/#work-with-me"
+weight = 100
 
-[build]
-    writeStats = true
+[[menu.main]]
+name = "Work With Me"
+title = "Work With Me"
+URL = "/#work-with-me"
+weight = 100
