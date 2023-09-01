@@ -48,6 +48,7 @@ collections:
     label: 'Show Dates'
     label_singular: 'show'
     folder: 'content/shows'
+    format: 'toml-frontmatter'
     filter: {field: visibleInCMS, value: true}
     create: true
     slug: '{{slug}}'
