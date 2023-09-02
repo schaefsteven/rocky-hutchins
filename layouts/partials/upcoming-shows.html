@@ -2,7 +2,7 @@
 <div class="show-calendar d-flex align-items-center justify-content-center w-100 pb-3">
     <div class="row g-2 justify-content-center w-100">
         {{ $shows := where .Site.RegularPages "Section" "shows" }}
-        {{ range where $shows "Params.showDate" "gt" now }}
+        {{ range where $shows "Params.showDate" "ge" (now.AddDate 0 0 -2) }}
             <div class="col-12 col-md-6">
                 <div class="subtle-border h-100 d-flex flex-column justify-content-center">
                     <div class="row py-4">
@@ -15,7 +15,7 @@
                             <h3 class="fs-5">{{ .Params.city }}</h3>
                             <div class="time-and-venue d-flex flex-wrap-reverse pe-3"> 
                                 <span class="show-time pe-3">
-                                    {{ .Params.showDate | time.Format "3:04 pm" }}
+                                    {{ .Params.showTime }}
                                 </span>
                                 <span class="show-venue">
                                     {{ .Params.venue }}

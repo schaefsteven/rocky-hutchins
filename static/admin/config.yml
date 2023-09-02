@@ -51,7 +51,7 @@ collections:
     format: 'toml-frontmatter'
     filter: {field: visibleInCMS, value: true}
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     summary: "{{city}}"
     sortable_fields: ['title', 'draft']
     editor:
@@ -61,9 +61,30 @@ collections:
           name: 'city',
           widget: 'string'
         }
-      - { label: 'Date and Time',
+      - { label: 'Date',
+        time_format: false,
+          picker_utc: true,
           name: 'showDate',
           widget: 'datetime',
+        }
+      - { label: 'Time (local)',
+          widget: 'datetime', 
+          default: '10:00 pm',
+          format: 'h:mm a',
+          date_format: '',
+          name: 'showTime'
+        }
+      - { label: 'Description',
+          widget: 'text',
+          name: 'description',
+          required: false
+        }
+      - { label: 'Draft', 
+          name: 'draft', 
+          widget: 'boolean', 
+          default: false, 
+          required: false,
+          hint: 'Drafts are not published on the website.'
         }
       - { name: visibleInCMS, 
           default: true, 
