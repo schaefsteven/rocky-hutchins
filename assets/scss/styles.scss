@@ -242,11 +242,12 @@ iframe {
     //opacity: 10%;
     transition: opacity 1s ease;
     opacity: 100%;
-    background-color: grey;
+    background-color: black;
     &.loading {
         /*! purgecss ignore current */
         @extend .placeholder-wave;
         opacity: 50%;
+        background-color: grey;
     }
 }
 
