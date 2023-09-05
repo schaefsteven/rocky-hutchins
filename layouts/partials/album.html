@@ -39,7 +39,7 @@
         <iframe 
             style="height: {{ add 145 (mul $numOfTracks 33) }}px;"
             title="Bandcamp Music Player"
-            class="bc-player"
+            class="bc-player loading"
             src="https://bandcamp.com/EmbeddedPlayer/{{ index $albumNum 0 }}/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" 
             seamless
             {{ $lazy | safeHTMLAttr }}

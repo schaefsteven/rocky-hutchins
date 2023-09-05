@@ -10,7 +10,7 @@
         {{ $videoID := findRESubmatch $regEx $videoID }}
         {{ $videoID := index (index $videoID 0) 1 }}
         <iframe 
-            class="yt-player"
+            class="yt-player loading"
             src="https://www.youtube.com/embed/{{ $videoID }}" 
             title="YouTube video player" 
             frameborder="0" 

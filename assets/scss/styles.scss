@@ -62,7 +62,9 @@ $code-color: #48E91D;
 //@import "../node_modules/bootstrap/scss/carousel";
 //@import "../node_modules/bootstrap/scss/spinners";
 //@import "../node_modules/bootstrap/scss/offcanvas";
-//@import "../node_modules/bootstrap/scss/placeholders";
+/*! purgecss start ignore */
+@import "../node_modules/bootstrap/scss/placeholders";
+/*! purgecss end ignore */
 
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -237,12 +239,14 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
 }
 
 iframe {
-    opacity: 10%;
+    //opacity: 10%;
+    transition: opacity 1s ease;
+    opacity: 100%;
     background-color: grey;
-    &.loaded {
+    &.loading {
         /*! purgecss ignore current */
-        transition: opacity 1s ease;
-        opacity: 100%;
+        @extend .placeholder-wave;
+        opacity: 50%;
     }
 }
 

@@ -3,10 +3,11 @@ const iframes = document.querySelectorAll("iframe")
 
 window.onload = function() {
     for (iframe of iframes) {
-        iframe.classList.add("loaded")
+        iframe.classList.remove("loading")
     }
 }
 
+// copy buttons
 const copyButtons = document.querySelectorAll(".copy")
 
 copyButtons.forEach((button) => {
