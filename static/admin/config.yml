@@ -13,6 +13,8 @@ public_folder: /img
 collections:
   - name: 'config'
     label: 'Site Config'
+    editor:
+      preview: false
     files:
       - name: 'config'
         label: 'Contact Info'
@@ -59,6 +61,10 @@ collections:
     fields:
       - { label: 'City', 
           name: 'city',
+          widget: 'string'
+        }
+      - { label: 'Venue', 
+          name: 'venue',
           widget: 'string'
         }
       - { label: 'Date',
@@ -148,6 +154,69 @@ collections:
           name: 'icon',
           widget: 'string',
           default: 'question-circle-fill'
+        }
+      - { name: visibleInCMS, 
+          default: true, 
+          widget: hidden 
+        }
+
+  - name: 'music'
+    label: 'Music'
+    label_singular: 'Item'
+    folder: 'content/music'
+    filter: {field: visibleInCMS, value: true}
+    create: true
+    slug: '{{slug}}'
+    summary: "{{position}} {{title}}"
+    sortable_fields: ['position', 'title', 'draft']
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', 
+          name: 'title', 
+          widget: 'string' 
+        }
+      - { label: 'Draft', 
+          name: 'draft', 
+          widget: 'boolean', 
+          default: false, 
+          required: false,
+          hint: 'Drafts are not published on the website.'
+        }
+      - { label: 'Position', 
+          name: 'position', 
+          widget: 'number', 
+          value_type: 'float', 
+          required: false,
+          hint: 'Use this to position your item in the list. Lower numbers move to the top of the list. You can use negative numbers and decimals.'
+        }
+      - { label: 'Item Type',
+          name: 'type',
+          widget: 'select',
+          options: [
+            { label: 'Youtube Video', value: 'ytVid' },
+            { label: 'Bandcamp', value: 'bcAlbum' },
+            ],
+          default: 'bcAlbum',
+          hint: 'There are two types of supported content: Youtube and Bandcamp. Select which type this item should be here, and provide the link in the appropriate field below.'
+        }
+      - { label: 'Bandcamp Link', 
+          name: 'bcLink', 
+          widget: 'string',
+          required: false,
+          hint: 'If this is a Bandcamp item, copy and paste the link to the Bandcamp page for the album or track here, it should look something like "https://exampleartist.bandcamp.com/album/example-album"'
+        }
+      - { label: 'Youtube Link', 
+          name: 'link', 
+          widget: 'string',
+          required: false,
+          hint: 'If this is a Youtube item, copy and paste the link to the Youtube page for the video here, it should look something like "https://www.youtube.com/watch?v=1-7BE2JutZY"'
+        }
+      - { label: 'Credits', 
+          name: 'credits', 
+          widget: 'string',
+          required: false,
+          hint: 'Example: Writer, Producer, Mix Engineer'
         }
       - { name: visibleInCMS, 
           default: true, 
