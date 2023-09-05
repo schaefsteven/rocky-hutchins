@@ -50,10 +50,10 @@
         </div>
         <div class="right">
             <a href="tel:{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}">
-                <i class="bi bi-telephone-fill ps-3"></i>
+                <i title="Call" class="bi bi-telephone-fill ps-3"></i>
             </a>
             <a href="sms:+{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}">
-                <i class="bi bi-chat-square-text-fill ps-3"></i>
+                <i title="Text" class="bi bi-chat-square-text-fill ps-3"></i>
             </a>
         </div>
     </div>
@@ -67,7 +67,7 @@
         </div>
         <div class="right">
             <a href="mailto:{{ .Site.Params.primEmail }}?subject={{ htmlEscape "Website Inquiry" }}">
-                <i class="bi bi-envelope-fill ps-3"></i>
+                <i title="Email" class="bi bi-envelope-fill ps-3"></i>
             </a>
         </div>
     </div>
