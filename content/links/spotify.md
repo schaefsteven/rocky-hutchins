@@ -1,9 +1,9 @@
 ---
 title: Spotify
-link: https://spotify.com
-iconSet: 'bi bi-'
-icon: spotify
 musicLink: true
-visibleInCMS: true
 position: 0
+link: https://open.spotify.com/artist/6mM6WOy8RqKGnA7G2U6o22
+iconSet: bi bi-
+icon: spotify
+visibleInCMS: true
 ---
