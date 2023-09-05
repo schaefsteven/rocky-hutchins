@@ -3,7 +3,7 @@
 <!-- Headshot and pitch -->
 <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
     {{ $headshot := resources.Get "images/headshot.jpg" }}
-    {{ $headshot = $headshot.Fill "200x200 webp" }}
+    {{ $headshot = $headshot.Fill "270x270 webp" }}
     <img 
         class="rounded-circle p-md-3 headshot" 
         src="{{ $headshot.RelPermalink }}" 
