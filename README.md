@@ -11,4 +11,6 @@ Some notable features of the site include:
 
 ### Device Recognition for Contact Import Instructions
 
+### Google Analytics
 
+### User-Friendly Content Management System 
