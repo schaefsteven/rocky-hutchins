@@ -6,7 +6,7 @@
                     <h2 class="p-0 m-0 me-3 text-nowrap">
                         Listen on:
                     </h2>
-                    <div class="listen-links d-flex flex-wrap justify-content-between justify-content-md-start px-2">
+                    <div class="listen-links d-flex flex-wrap justify-content-around justify-content-md-start px-2">
                         {{ range (where .Site.RegularPages "Section" "links") }}
                             {{ if .Params.musicLink }}
                                 {{ partial "icon-link.html" . }}
