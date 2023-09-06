@@ -9,8 +9,14 @@ Some notable features of the site include:
 
 ### Automatic Contact Card Generation
 
+### Link Forwarding
+
 ### Device Recognition for Contact Import Instructions
 
 ### Google Analytics
 
 ### User-Friendly Content Management System 
+
+### User-Configurable icons for links
+
+### CSS Purging
