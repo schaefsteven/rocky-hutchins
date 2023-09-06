@@ -69,4 +69,5 @@ URL = "/#work-with-me"
 weight = 100
 
 [permalinks]
-    links = '/:slug/'
+[permalinks.page]
+links = '/:slug/'
