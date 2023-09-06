@@ -28,6 +28,7 @@ One of the primary objectives for this site is to help the client in networking 
 
 
 ### Link Forwarding
+This site serves as a central place for the client to link to all other platforms that they are on. I added an additional feature that creates an easy-to-remember URL that will forward people to those platforms automatically. For instance, if the client adds a link to their Spotify account, a page is automatically created a rockyhutchins.com/links/spotify.
 
 ### Device Recognition for Contact Import Instructions
 
