@@ -67,3 +67,6 @@ name = "Work With Me"
 title = "Work With Me"
 URL = "/#work-with-me"
 weight = 100
+
+[permalinks]
+    links = '/:slug/'
