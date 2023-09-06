@@ -6,6 +6,8 @@ Technologies used:
 - [Hugo](https://gohugo.io/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Decap CMS](https://decapcms.org/)
+- [NPM](https://www.npmjs.com/)
+- [PurgeCSS](https://purgecss.com/)
 
 ## Features
 Some notable features of the site include: 
@@ -36,7 +38,14 @@ This site serves as a central place for the client to link to all other platform
 This site is connected to Google Analytics to track traffic and gain insights.
 
 ### User-Friendly Content Management System 
+Decap CMS provides a great interface that's easy to use so the client can update the site with ease.
+
+![Decap CMS](./readme-media/cms.png)
 
 ### User-Configurable icons for links
+The site is hooked up to both [Bootstrap Icons(https://icons.getbootstrap.com/) and [FontAwesome](https://fontawesome.com/) so that the client can quickly and easily add an icon to any link they need! 
+
+![Font Awesome icon library](./readme-media/icons.png)
 
 ### CSS Purging
+PurgeCSS is integrated into Hugo such that we can automatically optimize our CSS, which is especially helpful when using Bootstrap. This provides a huge boost in performance by removing any extra lines of CSS that we don't need, making the website faster and more responsive.
