@@ -21,7 +21,7 @@ The music page of the site pulls its data from Bandcamp and Youtube. Adding one 
 
 ### Automatic Contact Card Generation
 One of the primary objectives for this site is to help the client in networking with people. To aid in this, I created a system that automatically puts the client's contact information into a virtual contact card format (.vcf) with an quick download link. This way, the client can simply have someone pull up the website on their phone and download the contact card, and now that person has the client's full name, phone number, email, notes about their skills, and even a picture to help them remember the client and make sure they can find them in the future. The contact information for the website can all be updated from the same place, so if it changes in the future, the website and the contact card will stay consistent with each other.
-![Contact card being downloaded](./assets/images/ios-instructions.gif)
+![Contact card being downloaded](./readme-media/contact-card.png)
 
 
 ### Link Forwarding
