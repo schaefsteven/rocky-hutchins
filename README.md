@@ -37,6 +37,8 @@ This site serves as a central place for the client to link to all other platform
 ### Google Analytics
 This site is connected to Google Analytics to track traffic and gain insights.
 
+![Google Analytics](./readme-media/analytics.png)
+
 ### User-Friendly Content Management System 
 Decap CMS provides a great interface that's easy to use so the client can update the site with ease.
 
