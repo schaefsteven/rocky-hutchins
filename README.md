@@ -2,7 +2,7 @@
 
 This is a portfolio site for Drummer and Producer Rocky Hutchins. 
 
-Technologies used: 
+## Technologies used: 
 - [Hugo](https://gohugo.io/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Decap CMS](https://decapcms.org/)
