@@ -32,7 +32,7 @@ One of the primary objectives for this site is to help the client in networking 
 When downloading the contact card, the site detects what browser the user is using and displays the relevant instructions for how to download and import the contact information on that browser.
 
 ### Link Forwarding
-This site serves as a central place for the client to link to all other platforms that they are on. I added an additional feature that creates an easy-to-remember URL that will forward people to those platforms automatically. For instance, if the client adds a link to their Spotify account, a page is automatically created at [rockyhutchins.com/spotify](https://rockyhutchins.com/spotify). This makes it easy to quickly send someone a link to any of your platforms without having to look it up. It could also be used to track people clicking on that link to gain insights. 
+This site serves as a central place for the client to link to all other platforms that they are on. I added an additional feature that creates an easy-to-remember URL that will forward people to those platforms automatically. For instance, if the client adds a link to their Spotify account, a page is automatically created at [rockyhutchins.com/spotify](https://rockyhutchins.com/spotify). This makes it easy to quickly send someone a link to any of your platforms without having to look it up.
 
 ### Google Analytics
 This site is connected to Google Analytics to track traffic and gain insights.
