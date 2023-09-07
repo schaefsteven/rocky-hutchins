@@ -6,6 +6,9 @@ function chooseInstructions() {
     const instructionsID = detectUserAgent()
     document.querySelector("#default-instructions").classList.add("d-none")
     document.querySelector(instructionsID).classList.remove("d-none")
+    document.querySelectorAll(instructionsID + " img").forEach((element) => {
+        element.setAttribute("loading", "eager")
+    })
 }
 
 function detectUserAgent() {
