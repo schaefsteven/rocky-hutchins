@@ -1,0 +1,3 @@
+{{ range where .Site.RegularPages "Section" "links" }}
+{{ .RelPermalink }} {{ .Params.link }}
+{{ end }}
