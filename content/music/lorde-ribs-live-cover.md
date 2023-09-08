@@ -4,6 +4,6 @@ draft: false
 position: 2
 type: ytVid
 link: https://www.youtube.com/watch?v=qHOng20Jfdg
-credits: Drummer, songwriter
+credits: Drummer
 visibleInCMS: true
 ---
