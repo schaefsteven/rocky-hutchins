@@ -1,7 +1,7 @@
 ---
 title: Goner (live acoustic)
-link: https://www.youtube.com/watch?v=bD7SlH__YpA
 type: ytVid
-credits: Artist, Performer
+link: https://www.youtube.com/watch?v=bD7SlH__YpA
+credits: Writer, Performer
 visibleInCMS: true
 ---
