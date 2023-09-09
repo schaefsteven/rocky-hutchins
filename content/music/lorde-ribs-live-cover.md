@@ -1,5 +1,5 @@
 ---
-title: Somewhere Between Grey and Gold
+title: Common Nonsense - Somewhere Between Grey and Gold
 draft: false
 position: 2
 type: ytVid
