@@ -10,5 +10,5 @@ pitch: Do you need a drummer for your upcoming show or studio session? Need a
   scenes. I’d love to talk with you about how we can work together on your next
   project. Use the info below to get in touch!
 tagline: Drummer, Audio Engineer, Multi-instrumentalist, Artist, Live and Studio
-  Musician, Stage Technician
+  Musician
 ---
