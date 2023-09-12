@@ -1,4 +1,5 @@
-# [rockyhutchins.com](https://rockyhutchins.com)
+# Rocky Hutchins
+View this site at [rockyhutchins.com](https://rockyhutchins.com)
 
 This is a portfolio site for Drummer and Producer Rocky Hutchins. 
 
