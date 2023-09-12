@@ -1,14 +1,7 @@
 # Rocky Hutchins
 View this site at [rockyhutchins.com](https://rockyhutchins.com)
 
-This is a portfolio site for Drummer and Producer Rocky Hutchins. 
-
-## Technologies used: 
-- [Hugo](https://gohugo.io/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Decap CMS](https://decapcms.org/)
-- [NPM](https://www.npmjs.com/)
-- [PurgeCSS](https://purgecss.com/)
+Rocky Hutchins is an incredibly talented musician and producer. This website is designed to showcase his work and be a tool for networking and promoting himself. I created a unique design from scratch for this site, and I'm really happy with how it turned out. In addition to the design, I implemented lots of useful features and functionality into the site. 
 
 ## Features
 Some notable features of the site include: 
@@ -52,3 +45,11 @@ The site is hooked up to both [Bootstrap Icons(https://icons.getbootstrap.com/) 
 
 ### CSS Purging
 PurgeCSS is integrated into Hugo such that we can automatically optimize our CSS, which is especially helpful when using Bootstrap. This provides a huge boost in performance by removing any extra lines of CSS that we don't need, making the website faster and more responsive.
+
+## Technologies used: 
+- [Hugo](https://gohugo.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Decap CMS](https://decapcms.org/)
+- [NPM](https://www.npmjs.com/)
+- [PurgeCSS](https://purgecss.com/)
+
