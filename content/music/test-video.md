@@ -1,7 +1,8 @@
 ---
-title: Test Video
-link: https://www.youtube.com/watch?v=1-7BE2JutZY
+title: HEADLIGHTS
+position: 0
 type: ytVid
-credits: Artist, Performer, Heart throb
+link: https://www.youtube.com/watch?v=1-7BE2JutZY
+credits: Writer, Producer
 visibleInCMS: true
 ---

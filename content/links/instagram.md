@@ -1,7 +1,7 @@
 ---
 title: Instagram
-link: https://instagram.com
-iconSet: 'bi bi-'
+link: https://instagram.com/hockyrutchins
+iconSet: bi bi-
 icon: instagram
 visibleInCMS: true
 ---

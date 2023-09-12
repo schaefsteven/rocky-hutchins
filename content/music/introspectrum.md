@@ -1,6 +1,7 @@
 ---
 title: introspectrum
-bcLink: https://hockyrutchins.bandcamp.com/album/introspectrum
+draft: true
 type: bcAlbum
+bcLink: https://hockyrutchins.bandcamp.com/album/introspectrum
 visibleInCMS: true
 ---

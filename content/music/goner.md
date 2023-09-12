@@ -1,6 +1,7 @@
 ---
 title: GONER
-bcLink: https://hockyrutchins.bandcamp.com/track/goner
+draft: true
 type: bcAlbum
+bcLink: https://hockyrutchins.bandcamp.com/track/goner
 visibleInCMS: true
 ---

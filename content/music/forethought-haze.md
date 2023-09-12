@@ -1,9 +1,9 @@
 ---
-title: Forethought (Haze)
+title: FORETHOUGHT (HAZE)
 draft: false
-position: 1
+position: 5
 type: bcAlbum
 bcLink: https://hockyrutchins.bandcamp.com/track/forethought-haze-2
-credits: Test, test, test
+credits: Writer, Producer, Mix Engineer
 visibleInCMS: true
 ---

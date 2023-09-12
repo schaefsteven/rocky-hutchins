@@ -1,7 +1,7 @@
 ---
 title: Tiktok
-link: https://tiktok.com
-iconSet: 'bi bi-'
+link: https://tiktok.com/@hockyrutchins
+iconSet: bi bi-
 icon: tiktok
 visibleInCMS: true
 ---

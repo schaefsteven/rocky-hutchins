@@ -1,8 +1,8 @@
 ---
 title: Youtube
-link: https://youtube.com
-iconSet: 'bi bi-'
-icon: youtube
 musicLink: true
+link: https://www.youtube.com/@rockyhutchinsmusic
+iconSet: bi bi-
+icon: youtube
 visibleInCMS: true
 ---
