@@ -122,11 +122,15 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
 }
 
 .home-hero .overlay {
+    // Used to fix browsers that don't support svh
+    $vh-height: Max(70vh, Min(600px, 90vw));
     $height: Max(70svh, Min(600px, 90svw));
+    min-height: $vh-height;
     min-height: $height;
     > .behind-overlay {
         top: 0px;
         right: 0px;
+        height: $vh-height;
         height: $height;
         max-width: none;
         overflow-x: clip;
