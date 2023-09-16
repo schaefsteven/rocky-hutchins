@@ -6,9 +6,11 @@
   "scripts": {
     "build": "npm run hugo:build",
     "serve": "run-p hugo:serve decap:serve",
+    "serve-lan": "run-p decap:serve hugo:serve-lan",
     "prod": "npm run hugo:build && serve public",
     "hugo:build": "hugo",
     "hugo:serve": "hugo serve",
+    "hugo:serve-lan": "hugo serve --bind 192.168.1.11 -p 9000 --liveReloadPort 443",
     "decap:serve": "decap-server"
   },
   "author": "",
