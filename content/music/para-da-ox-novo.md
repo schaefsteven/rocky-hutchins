@@ -3,7 +3,7 @@ title: Para Da Ox - Novo
 draft: false
 position: 3
 type: ytVid
-link: https://www.youtube.com/watch?v=DPj_Wjb85-g&list=OLAK5uy_m8qfjX-h_C-ezHYcdKG9pCvfaffgHm_qQ
+link: https://youtu.be/DPj_Wjb85-g?si=sskO8PrUSBvjKkxm
 credits: Producer, Mix Engineer
 visibleInCMS: true
 ---
