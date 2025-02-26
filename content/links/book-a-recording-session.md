@@ -2,9 +2,9 @@
 title: Book a Recording Session
 draft: false
 musicLink: false
-position: 10
+position: ""
 link: https://wardrumsessions.as.me/Rocky
-iconSet: fa-solid fa-
+iconSet: bi bi-
 icon: calendar-plus
 visibleInCMS: true
 ---
