@@ -1,5 +1,5 @@
 ---
-title: Book a Recording Session
+title: War Drum Studios Recording Session
 draft: false
 musicLink: false
 position: ""
