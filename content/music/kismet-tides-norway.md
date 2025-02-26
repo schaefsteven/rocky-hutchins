@@ -1,5 +1,5 @@
 ---
-title: Kismet Tides - Norway
+title: Kismet Tides - Norway (Thinking of Me)
 draft: false
 position: -1.5
 type: bcAlbum
