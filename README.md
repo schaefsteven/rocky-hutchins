@@ -39,7 +39,7 @@ Decap CMS provides a great interface that's easy to use so the client can update
 ![Decap CMS](./readme-media/cms.png)
 
 ### User-Configurable icons for links
-The site is hooked up to both [Bootstrap Icons(https://icons.getbootstrap.com/) and [FontAwesome](https://fontawesome.com/) so that the client can quickly and easily add an icon to any link they need! 
+The site is hooked up to both [Bootstrap Icons](https://icons.getbootstrap.com/) and [FontAwesome](https://fontawesome.com/) so that the client can quickly and easily add an icon to any link they need! 
 
 ![Font Awesome icon library](./readme-media/icons.png)
 
