@@ -1,7 +1,7 @@
 ---
 title: PATTERNS
 draft: false
-position: -1
+position: ""
 type: bcAlbum
 bcLink: https://hockyrutchins.bandcamp.com/album/patterns
 credits: Writer, Producer, Mix Engineer
