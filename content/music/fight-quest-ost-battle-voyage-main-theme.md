@@ -1,7 +1,7 @@
 ---
 title: "FIGHT-QUEST OST - Battle Voyage (Main Theme) "
 draft: false
-position: ""
+position: -2
 type: ytVid
 link: https://www.youtube.com/watch?v=duv3ElTsZaw
 credits: Composer, Mix Engineer
