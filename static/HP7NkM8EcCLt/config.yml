@@ -54,7 +54,7 @@ collections:
     filter: {field: visibleInCMS, value: true}
     create: true
     slug: "{{slug}}"
-    summary: "{{showDate | date('YYYY-MM-DD')}}    {{city}}: {{venue}}{{draft | ternary('  -  DRAFT', '')}}"
+    summary: "{{showDate | date('YYYY-MM-DD')}} ---- {{city}}: {{venue}}{{draft | ternary('  -  DRAFT', '')}}"
     sortable_fields: ['title', 'draft', 'showDate', 'venue', 'city']
     editor:
       preview: false
