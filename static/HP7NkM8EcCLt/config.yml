@@ -54,7 +54,7 @@ collections:
     filter: {field: visibleInCMS, value: true}
     create: true
     slug: "{{slug}}"
-    summary: "{{city}}"
+    summary: "{{date}}: {{city}}: {{venue}}"
     sortable_fields: ['title', 'draft']
     editor:
       preview: false
